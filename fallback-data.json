@@ -1,9 +1,9 @@
 {
     "githubRepos": [
         {
-            "name": "WevertonGomesCosta.github.io",
-            "html_url": "https://github.com/WevertonGomesCosta/WevertonGomesCosta.github.io",
-            "homepage": "https://wevertongomescosta.github.io",
+            "name": "IsraelCRibeiro.github.io",
+            "html_url": "https://github.com/israel-c-ribeiro/IsraelCRibeiro.github.io",
+            "homepage": "https://israelcribeiro.github.io",
             "description": "Desenvolvi este site do zero como um hub central para minha atuação (CEO, Pesquisador, Cientista de Dados), focado em automação, reprodutibilidade e clareza.  Configurei rotinas em R e Python que consomem as APIs do GitHub e Google Scholar, atualizando automaticamente minhas listas de projetos e publicações.  Implementei suporte multilíngue.",
             "language": "JavaScript",
             "stargazers_count": 1,
