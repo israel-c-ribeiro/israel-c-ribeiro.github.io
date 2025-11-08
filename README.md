@@ -1,4 +1,4 @@
-# ⚛️ Dr. Israel C. Ribeiro
+## ⚛️ Dr. Israel C. Ribeiro
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/israel-ribeiro1/)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0003--0742--5936-green?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0002-5272-8752)
@@ -19,51 +19,6 @@ My academic and professional background includes:
 - 🎓 **Teaching & Outreach**: served as a **teaching assistant** for undergraduate chemistry courses and **volunteered as an English teacher** for three years, enhancing communication, mentorship, and leadership skills.  
 
 I am deeply interested in combining **first-principles simulations**, **machine learning**, and **data science** to design and understand advanced **quantum and energy materials**.  
-
-**Areas of expertise:**  
-- Density Functional Theory (DFT) and computational materials science  
-- Structural, electronic, and optical properties of 2D perovskites  
-- Data science, machine learning, and statistical modeling applied to chemistry  
-- Quantum chemistry softwares and programming: **VASP, Quantum Espresso, FHI-aims, Gaussian, Python, R, Julia**, among others  
-
----
-<p align="center" style="display: flex; gap: 15px;">
-    <a href="mailto:israelribeiroc7@gmail.com">
-        <img 
-            alt="gmail" 
-            title="Contact me" 
-            src="https://custom-icon-badges.demolab.com/badge/Mail-E61B23.svg?logo=mail&style=for-the-badge&labelColor=FF7043&color=FF5722"
-        /> 
-    </a>
-    <a href="https://www.linkedin.com/in/israel-ribeiro1/">
-        <img 
-            alt="Linkedin" 
-            title="Linkedin" 
-            src="https://custom-icon-badges.demolab.com/badge/Linkedin-1E6AE1.svg?logo=linkedin&style=for-the-badge&logoColor=ffffff&labelColor=0077B5&color=006C94"
-        /> 
-    </a> 
-    <a href="https://scholar.google.com/citations?hl=en&user=GQugll8AAAAJ">
-        <img 
-            alt="Google Scholar" 
-            title="Google Scholar" 
-            src="https://custom-icon-badges.demolab.com/badge/Scholar-8B31CE.svg?logo=googlescholar&style=for-the-badge&logoColor=ffffff&labelColor=4285F4&color=1C64F2"
-        />
-    </a>
-    <a href="https://www.researchgate.net/profile/Israel-Ribeiro">
-        <img 
-            alt="ResearchGate" 
-            title="ResearchGate" 
-            src="https://custom-icon-badges.demolab.com/badge/ResearchGate-00ccbb.svg?logo=researchgate&style=for-the-badge&logoColor=ffffff&labelColor=00cc88&color=00bb66"
-        />
-  </a>
-    <a href="https://github.com/israel-c-ribeiro?tab=followers">
-        <img 
-            alt="Seguidores" 
-            title="Me siga no GitHub" 
-            src="https://custom-icon-badges.demolab.com/github/followers/israel-c-ribeiro?color=24292F&labelColor=24292F&style=for-the-badge&logo=github&label=Followers&logoColor=white&cache_bust=30345"
-        />
-    </a>
-</p>
 
 ---
 
