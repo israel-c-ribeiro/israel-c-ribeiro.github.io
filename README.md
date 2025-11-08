@@ -131,7 +131,7 @@ I am deeply interested in combining **first-principles simulations**, **machine 
   <li>ML models for materials.</li>
 </ul>
 
-<hr>
+
 
 ---
 
