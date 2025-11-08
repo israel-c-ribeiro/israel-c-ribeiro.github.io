@@ -1,71 +1,258 @@
 # ⚛️ Dr. Israel C. Ribeiro
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/wevertoncosta/)
-[![ORCID](https://img.shields.io/badge/ORCID-0000--0003--0742--5936-green?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0003-0742-5936)
-[![Lattes](https://img.shields.io/badge/Lattes-CNPq-blue)](http://lattes.cnpq.br/2723811288754046)
-[![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=flat&logo=github)](https://github.com/WevertonGomesCosta)
-[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-Profile-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com.br/citations?hl=pt-BR&user=eJNKcHsAAAAJ)
-[![LICAE/UFV](https://img.shields.io/badge/LICAE-UFV-2c3e50)](https://www.licae.ufv.br/equipe/weverton-gomes-da-costa/)
-[![Conecta GEM](https://img.shields.io/badge/Conecta%20GEM-AgTech-success)](https://www.conectagem.com/sobre)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/israel-ribeiro1/)
+[![ORCID](https://img.shields.io/badge/ORCID-0000--0003--0742--5936-green?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0002-5272-8752)
+[![Lattes](https://img.shields.io/badge/Lattes-CNPq-blue)](http://lattes.cnpq.br/3550877645196037)
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=flat&logo=github)](https://github.com/israel-c-ribeiro)
+[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-Profile-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=GQugll8AAAAJ&hl=pt-BR)
 
 ---
 
-## 👨‍🔬 Sobre mim
+## About me
 
-Sou **Engenheiro Agrônomo** pela **Universidade Federal de Viçosa (2015)**, com **Mestrado (2018)** e **Doutorado (2022) em Genética e Melhoramento** pela mesma instituição. Atualmente, sou **doutorando em Estatística na UFV** e realizo **pós-doutorado pela FAPEMIG/CNPq**.  
+I am a **Computational Materials Scientist and Postdoctoral Researcher** at the **University of Mons (UMONS)**, passionate about bridging **chemistry, materials science, and data analytics** to accelerate materials discovery. I hold a **Ph.D. in Theoretical Physical Chemistry** from the **University of São Paulo (USP)**, where I investigated **surface passivation in two-dimensional perovskite thin films** using **Density Functional Theory (DFT)** to elucidate their **structural, energetic, and optoelectronic properties**.  
 
-Minha trajetória inclui:  
-- 📊 **Graduação**: estágio na **EPAMIG**, com planejamento experimental e análises estatísticas para o melhoramento genético de arroz irrigado.  
-- 🔬 **Mestrado**: atuação no **Laboratório de Bioinformática (UFV)**, pesquisando meta-análise e modelos mistos aplicados ao melhoramento vegetal.  
-- 🤖 **Doutorado**: integração ao **Laboratório de Bioinformática** e ao **LICAE/UFV**, com foco em dados genotípicos simulados, predição e importância de marcadores via **machine learning** e **redes neurais**.  
-- 🌱 **Pós-doutorado (EMBRAPA Mandioca e Fruticultura)**: análises de **GWS**, **GWAS** e modelos mistos no projeto *Melhoramento genético de mandioca: ações integradas para o desenvolvimento de novas cultivares para alimentação e uso industrial – Fase II*.  
+My academic and professional background includes:  
+- ⚛️ **Ph.D. (USP)**: atomic-scale modeling of 2D hybrid perovskites, focusing on **metallic and organic cation passivation** and its effects on material stability and performance.  
+- 💻 **Postdoctoral Research (UMONS)**: development of **computational workflows and data-driven models** to study emerging **quantum and energy materials**.  
+- 🧠 **MBA in Data Science and Analytics (USP)**: application of **machine learning**, **statistical learning**, and **data visualization** to materials informatics.  
+- 🧪 **Industry Experience (AMG-BR & Resind Ltda.)**: research and development in **chemical process optimization** and **analytical laboratory operations** in the mineralogy sector.  
+- 🎓 **Teaching & Outreach**: served as a **teaching assistant** for undergraduate chemistry courses and **volunteered as an English teacher** for three years, enhancing communication, mentorship, and leadership skills.  
 
-Atualmente, busco aprofundar a aplicação de **métodos estatísticos avançados** e **técnicas biométricas** para enfrentar desafios contemporâneos no **melhoramento de plantas** e na **agricultura digital**.
+I am deeply interested in combining **first-principles simulations**, **machine learning**, and **data science** to design and understand advanced **quantum and energy materials**.  
 
-**Áreas de experiência:**  
-- 🌾 Melhoramento de plantas e genética quantitativa  
-- 📈 Modelos mistos, diversidade genética, seleção genômica ampla e estudos de associação genômica  
-- 🤖 Machine Learning e redes neurais aplicadas à biologia  
-- 💻 Softwares e linguagens: **R, Python, MATLAB, GENES, Selegen**, entre outros  
+**Areas of expertise:**  
+- Density Functional Theory (DFT) and computational materials science  
+- Structural, electronic, and optical properties of 2D perovskites  
+- Data science, machine learning, and statistical modeling applied to chemistry  
+- Quantum chemistry softwares and programming: **VASP, Quantum Espresso, FHI-aims, Gaussian, Python, R, Julia**, among others  
+
+---
+<p align="center" style="display: flex; gap: 15px;">
+    <a href="mailto:israelribeiroc7@gmail.com">
+        <img 
+            alt="gmail" 
+            title="Contact me" 
+            src="https://custom-icon-badges.demolab.com/badge/Mail-E61B23.svg?logo=mail&style=for-the-badge&labelColor=FF7043&color=FF5722"
+        /> 
+    </a>
+    <a href="https://www.linkedin.com/in/israel-ribeiro1/">
+        <img 
+            alt="Linkedin" 
+            title="Linkedin" 
+            src="https://custom-icon-badges.demolab.com/badge/Linkedin-1E6AE1.svg?logo=linkedin&style=for-the-badge&logoColor=ffffff&labelColor=0077B5&color=006C94"
+        /> 
+    </a> 
+    <a href="https://scholar.google.com/citations?hl=en&user=GQugll8AAAAJ">
+        <img 
+            alt="Google Scholar" 
+            title="Google Scholar" 
+            src="https://custom-icon-badges.demolab.com/badge/Scholar-8B31CE.svg?logo=googlescholar&style=for-the-badge&logoColor=ffffff&labelColor=4285F4&color=1C64F2"
+        />
+    </a>
+    <a href="https://www.researchgate.net/profile/Israel-Ribeiro">
+        <img 
+            alt="ResearchGate" 
+            title="ResearchGate" 
+            src="https://custom-icon-badges.demolab.com/badge/ResearchGate-00ccbb.svg?logo=researchgate&style=for-the-badge&logoColor=ffffff&labelColor=00cc88&color=00bb66"
+        />
+  </a>
+    <a href="https://github.com/israel-c-ribeiro?tab=followers">
+        <img 
+            alt="Seguidores" 
+            title="Me siga no GitHub" 
+            src="https://custom-icon-badges.demolab.com/github/followers/israel-c-ribeiro?color=24292F&labelColor=24292F&style=for-the-badge&logo=github&label=Followers&logoColor=white&cache_bust=30345"
+        />
+    </a>
+</p>
 
 ---
 
-## 🚀 Projetos em Destaque
-- **Seleção Genômica em Milho** → Pipeline em R para prever produtividade com base em dados genômicos  
-- **Modelagem Preditiva de Safras** → Modelos em Python para estimar rendimento agrícola usando dados climáticos  
-- **Dashboard Interativo** → Visualização de dados agrícolas em Shiny (R) para tomada de decisão  
+## 🛠️ Technical Skills
 
-👉 Veja todos os projetos no meu [perfil do GitHub](https://github.com/WevertonGomesCosta).
+- **Programming & Data Analytics**  
+  <img 
+    alt="Python" 
+    title="Python" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" 
+    width="40px" 
+    style="margin-right: 10px;" 
+  />
+  <img 
+    alt="C" 
+    title="C Programming" 
+    src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" 
+    width="40px" 
+    style="margin-right: 10px;" 
+  />
+   <img 
+    alt="Spyder" 
+    title="Spyder" 
+    src="https://i0.wp.com/2.bp.blogspot.com/-Alklx2Guuz8/XJgQeQ6YCaI/AAAAAAAAK-U/RmQQyzY5oRI-e4qpXD1elxCyaO_RGRmHwCLcBGAs/s1600/1200px-Spyder_logo.svg.png?ssl=1" 
+    width="40px" 
+    style="margin-right: 10px;" 
+  />
+   <img 
+    alt="vscode" 
+    title="vscode" 
+    src="https://code.visualstudio.com/assets/images/code-stable.png" 
+    width="40px" 
+    style="margin-right: 10px;" 
+  />
+   <img 
+    alt="pycharm" 
+    title="pycharm" 
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/PyCharm_Icon.svg/1024px-PyCharm_Icon.svg.png" 
+    width="40px" 
+    style="margin-right: 10px;" 
+  />
+
+- **Computational Chemistry Tools**  
+  <img 
+    alt="VASP" 
+    title="VASP" 
+    src="https://www.vasp.at/images/logo.png" 
+    width="60px" 
+    style="margin-right: 10px;" 
+  />
+  <img 
+    alt="Quantum Espresso" 
+    title="Quantum Espresso" 
+    src="https://www.quantum-espresso.org/wp-content/uploads/2022/03/quantum_ogo_ok.png" 
+    width="100px" 
+    style="margin-right: 10px;" 
+  />
+  <img 
+    alt="Gaussian" 
+    title="Gaussian" 
+    src="https://software.sjtu.edu.cn/Assets/userfiles/images/Logo/Gaussian_logo_with_name-removebg-preview(1).png" 
+    width="70px" 
+    style="margin-right: 10px;" 
+  />
+
+- **Version Control & Collaboration**  
+  <img 
+    alt="Git" 
+    title="Git" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" 
+    width="40px" 
+    style="margin-right: 10px;" 
+  />
+  <img 
+    alt="Overleaf" 
+    title="Overleaf" 
+    src="https://images.ctfassets.net/nrgyaltdicpt/6gsvc5Ogjmu04I4Miu0uGg/cb1d4391717d2ab8d5e42ede6fb0eef1/overleaf_wide_colour_light_bg.png" 
+    width="70px" 
+    style="margin-right: 10px;" 
+  />
+ 
 
 ---
 
-## 🏢 Conecta GEM
+## 🎓 Academic Background
+- **Ph.D. in Theoretical Physical Chemistry**  
+  _University of São Paulo (USP), São Carlos, Brazil_ (2020–2025)  
+  **Thesis**: Atomic-scale Investigations on the Passivation of Ultrathin Layers of 2D Hybrid Perovskites   
+  **Research Advisor**: Prof. Juarez L. F. Da Silva  
 
-Sou **CEO e Cofundador da [Conecta GEM](https://www.conectagem.com/sobre)**, uma empresa de base tecnológica que conecta **estatística, ciência de dados e agricultura**.  
-
-A Conecta GEM nasceu com o propósito de **transformar dados em soluções inteligentes para o agronegócio**, aproximando **pesquisa científica** e **aplicações práticas**.  
-
-Nossas principais frentes de atuação incluem:  
-- 📊 Consultoria em **modelagem estatística e biometria**  
-- 🌱 Aplicação de **seleção genômica e estudos de associação**  
-- 🤖 Desenvolvimento de soluções em **machine learning e inteligência artificial**  
-- 💻 Treinamentos e capacitações em **R, Python e análise de dados**
+- **MBA in Data Science and Analytics**  
+  _University of São Paulo (USP), Brazil_ (2024–2026)  
+  **Thesis**: Unsupervised Learning for Perovskite Solar Cells: Discovering Hidden Patterns in Photovoltaic Data  
+  **Research Advisor**: Prof. Gabrielle Lombardi
   
----
-
-## 🛠️ Habilidades Técnicas
-- **Linguagens:** Python, R  
-- **Bibliotecas/Frameworks:** Pandas, Scikit-learn, TensorFlow, tidyverse, caret, Shiny  
-- **Áreas:** Machine Learning, Estatística, Bioinformática, Seleção Genômica  
-- **Ferramentas:** Git/GitHub, pipelines reprodutíveis, visualização de dados  
+- **B.Sc. in Chemistry**  
+  _Federal University of São João del Rei (UFSJ), Brazil_ (2015–2020)  
+  **Thesis**: Theoretical Investigation of GaN in the Haeckelita 8-4 Structure    
+  **Research Advisor**: Prof. Horacio W. Alvez  
 
 ---
 
-## 📫 Contato
-- 📍 Viçosa, MG — Brasil  
-- ✉️ [Email](mailto:weverton@email.com)  
-- 🔗 [LinkedIn](https://www.linkedin.com/in/wevertoncosta/) | [ORCID](https://orcid.org/0000-0003-0742-5936) | [Lattes](http://lattes.cnpq.br/2723811288754046) | [GitHub](https://github.com/WevertonGomesCosta) | [LICAE/UFV](https://www.licae.ufv.br/equipe/weverton-gomes-da-costa/) | [Conecta GEM](https://www.conectagem.com/sobre) | [Google Scholar](https://scholar.google.com.br/citations?hl=pt-BR&user=eJNKcHsAAAAJ)
+<h2>👨🏾‍🔬 Post-Doctoral Experience</h2>
+
+<!-- MONS -->
+[University of Mons](https://web.umons.ac.be/en/)
+<p><strong>Postdoc Fellow</strong> | (2026 - current) | Mons, Belgium</p>
+<ul>
+  <li>Electronic Calculations;</li>
+  <li>ML models for materials.</li>
+</ul>
+
+<hr>
 
 ---
 
-✨ Este repositório hospeda meu **site pessoal/portfólio**: [WevertonGomesCosta.github.io](https://wevertongomescosta.github.io/)
+## 🧪 Research Highlights
+
+- **2D Perovskites**: Investigating the structural, energetic, and optoelectronic properties of ultrathin organic-inorganic hybrid perovskites through DFT simulations.       
+- **Passivation Studies**: Examining the role of transition metal, alkali and organic cations passivation on perovskites surfaces.     
+- **Film Thickness Analysis**: Unveiling the relationship between perovskites thin film thickness and optoelectronic properties for photovoltaic applications.     
+- **Machine Learning**: The application of machine learning techniques and data science methodologies to predict and analyze the properties of semiconductor materials. 
+
+### 📰 Selected Publications
+1. **Impact of Thin Film Thickness on the Structural, Energetic, and Optoelectronic Properties of Two-Dimensional Perovskites**  
+   _ACS Applied Energy Materials (2024)_    
+    Authors: **Israel C. Ribeiro**, FD Picoli, PIV Moraes, AFV Fonseca, LN Oliveira, AF Nogueira and JLF Da Silva.       
+      DOI: [10.1021/acsaem.4c02800](https://pubs.acs.org/doi/10.1021/acsaem.4c02800)  
+   
+2. **Unveiling the Impact of Organic Cation Passivation on Structural and Optoelectronic Properties of Two-Dimensional Perovskites Thin Films**  
+   _Applied Surface Science (2024)_      
+     Authors: **Israel C. Ribeiro**, PIR Moraes, AFB Bittencourt and JLF Da Silva.         
+        DOI: [10.1016/j.apsusc.2024.161098](https://doi.org/10.1016/j.apsusc.2024.161098)  
+
+3. **Role of the Adsorption of Alkali Cations on Ultrathin n-Layers of Two-Dimensional Perovskites**       
+   _Journal of Physical Chemistry C (2023)_        
+   Authors: **Israel C. Ribeiro**, PIR Moraes, AFB Bittencourt and JLF Da Silva.         
+   DOI: [10.1021/acs.jpcc.3c01894](https://doi.org/10.1021/acs.jpcc.3c01894)      
+
+4. **CaTiO3:Er3+:Yb3+ Upconversion from 980 nm to 1550 nm Excitation and its Potential as Cells Luminescent Probes**  
+   _Materials Chemistry and Physics (2019)_                       
+   Authors: RV Perrella, **Israel C. Ribeiro**, PHA Campos-Junior, MA Schiavon, E Pecoraro, SJL Ribeiro and JL Ferrari.                    
+   DOI: [10.1016/j.matchemphys.2018.11.018](https://doi.org/10.1016/j.matchemphys.2018.11.018) 
+
+_For a complete list of publications, visit my [Google Scholar](https://scholar.google.com/citations?hl=en&user=GQugll8AAAAJ)._  
+
+---
+
+## 📢 Talks & Conferences
+- _"Metal Halides Perovskites for Optoelectronic: from Fundamental to Devices"_  
+  **CNRS School, France** (2024) 
+- _"The Chemistry Beyond Haber–Bosch Process"_  
+  **PechaKucha Seminar, IFSC–USP** (2024)  
+- _"Impact of Organic Cation Passivation on Perovskites Thin Films"_  
+  **1st CMD-CINE Workshop, IQSC-USP** (2024) 
+- _"The Chemistry Behind the Synthesis of MAPbI3 Perovskites"_  
+  **QTNano Journal Club, IQSC-USP** (2024)
+- _"Role of Alkali Cations Passivation on Perovskites Thin Films"_  
+  **Materials Chemistry Research Group, UFSJ** (2024) 
+- _"Surface Passivation in Perovskite Materials: Ab initio Investigations"_  
+  **CINE Conference, UNICAMP** (2023)  
+- _"Energy Transfer from Tb3+ to Eu3+ in SiO2-TiO2"_  
+  **18th International Conference on Luminescence, Brazil** (2017)
+
+_To download the presentations, visit my [ResearchGate](https://www.researchgate.net/profile/Israel-Ribeiro)._ 
+
+---
+
+<h2>👨🏾‍🏭 Industry Experience</h2>
+
+<!-- AMG Brazil -->
+[AMG Brazil](https://amg-br.com/pt/)
+<p><strong>Chemical Process Intern</strong> | (2015-2018) | São João del Rei, Brazil</p>
+<ul>
+  <li>Performed fluoride and chloride analysis and elemental analysis using ICP;</li>
+  <li>Executed process enhancement tests and generated reports;</li>
+  <li>Led 5S program implementation, enhancing lab efficiency.</li>
+</ul>
+
+<hr>
+
+<!-- Resind LTDA -->
+[Resind LTDA](https://resind.com.br/)
+<p><strong>Chemical Technician</strong> | (2019-2020) | São João del Rei, Brazil</p>
+<ul>
+  <li>Oversaw quality tests for primary products, ensuring compliance with standards;</li>
+  <li>Conducted quantitative chemical analyses using X-ray techniques;</li>
+  <li>Maintained product excellence and reliability through comprehensive assessments.</li>
+</ul>
+
+ ---
