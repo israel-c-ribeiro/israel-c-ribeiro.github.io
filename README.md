@@ -14,7 +14,6 @@ I am a **Computational Materials Scientist and Postdoctoral Researcher** at the 
 
 My academic and professional background includes:  
 - ⚛️ **Ph.D. (USP)**: atomic-scale modeling of 2D hybrid perovskites, focusing on **metallic and organic cation passivation** and its effects on material stability and performance.  
-- 💻 **Postdoctoral Research (UMONS)**: development of **computational workflows and data-driven models** to study emerging **quantum and energy materials**.  
 - 🧠 **MBA in Data Science and Analytics (USP)**: application of **machine learning**, **statistical learning**, and **data visualization** to materials informatics.  
 - 🧪 **Industry Experience (AMG-BR & Resind Ltda.)**: research and development in **chemical process optimization** and **analytical laboratory operations** in the mineralogy sector.  
 - 🎓 **Teaching & Outreach**: served as a **teaching assistant** for undergraduate chemistry courses and **volunteered as an English teacher** for three years, enhancing communication, mentorship, and leadership skills.  
