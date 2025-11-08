@@ -1,4 +1,4 @@
-# 🌱 Weverton Gomes da Costa — Portfólio Pessoal
+# ⚛️ Dr. Israel C. Ribeiro
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/wevertoncosta/)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0003--0742--5936-green?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0003-0742-5936)
