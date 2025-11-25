@@ -332,7 +332,7 @@ const GithubReposModule = {
                       ? translations[currentLang] 
                       : {};
         
-        const siteUrl = repo.homepage || (repo.has_pages ? `https://wevertongomescosta.github.io/${repo.name}/` : null);
+        const siteUrl = repo.homepage || (repo.has_pages ? `https://israel-c-ribeiro.github.io/${repo.name}/` : null);
     
         let actionsHtml = '';
         if (siteUrl) actionsHtml += `<a class="link-btn" href="${siteUrl}" target="_blank" rel="noopener" data-key="repo-live-site">${trans['repo-live-site'] || 'Ver Site'}</a>`;
@@ -1167,12 +1167,12 @@ const CvPdfGenerator = {
             // Pega o idioma atual (necessário para a correção do Location)
             const lang = window.currentLang || 'pt';
 
-            doc.setFontSize(20).setFont('helvetica', 'bold').setTextColor(0).text(langContent['hero-name'] || 'Weverton Gomes da Costa', headerX, y + 15, { maxWidth: headerW });
+            doc.setFontSize(20).setFont('helvetica', 'bold').setTextColor(0).text(langContent['hero-name'] || 'Dr. Israel C. Ribeiro', headerX, y + 15, { maxWidth: headerW });
             
             // --- ALTERAÇÃO: Adicionando todos os subtítulos ---
             
             // Subtítulo 1
-            doc.setFontSize(12).setFont('helvetica', 'normal').setTextColor(themeColor).text(langContent['subtitle-1'] || 'Cientista de Dados | Doutorando em Estatística', headerX, y + 30, { maxWidth: headerW });
+            doc.setFontSize(12).setFont('helvetica', 'normal').setTextColor(themeColor).text(langContent['subtitle-1'] || 'Computational Materials Scientist', headerX, y + 30, { maxWidth: headerW });
             
             // Subtítulo 2
             doc.setFontSize(10).setFont('helvetica', 'normal').setTextColor(80).text(langContent['subtitle-2'] || '', headerX, y + 44, { maxWidth: headerW });
@@ -1184,18 +1184,18 @@ const CvPdfGenerator = {
 
             // Posições 'y' ajustadas para os itens seguintes:
             doc.setFontSize(9).setFont('helvetica', 'normal').setTextColor(80);
-            doc.text(`Email: wevertonufv@gmail.com`, headerX, y + 70); 
+            doc.text(`Email: israelribeiroc7@gmail.com`, headerX, y + 70); 
             
-            doc.text(`LinkedIn: linkedin.com/in/wevertoncosta`, headerX, y + 82); 
+            doc.text(`LinkedIn: linkedin.com/in/israel-ribeiro1`, headerX, y + 82); 
             doc.setTextColor(40, 40, 255); 
             try {
-                doc.textWithLink('linkedin.com/in/wevertoncosta', headerX + doc.getTextWidth('LinkedIn: '), y + 82, { url: 'https://linkedin.com/in/wevertoncosta' }); 
+                doc.textWithLink('linkedin.com/in/israel-ribeiro1', headerX + doc.getTextWidth('LinkedIn: '), y + 82, { url: 'https://linkedin.com/in/israel-ribeiro1' }); 
             } catch (e) { console.warn("jsPDF textWithLink pode não ser suportado."); }
             doc.setTextColor(80); 
 
             // Correção do "Location" (como feito anteriormente)
             const locationLabel = (lang === 'pt') ? 'Localização:' : 'Location:';
-            doc.text(`${locationLabel} ${langContent['pdf-location'] || 'Viçosa - MG, Brazil'}`, headerX, y + 94); 
+            doc.text(`${locationLabel} ${langContent['pdf-location'] || 'Mons, Belgium'}`, headerX, y + 94); 
 
             // --- ALTERAÇÃO: Ajusta o 'y' final para acomodar a imagem maior (avatarSize) e os subtítulos (25 pts) ---
             const finalYIncrement = avatarDataUrl ? avatarSize + 25 : 80 + 25; // Usa o avatarSize (100)
@@ -1327,7 +1327,7 @@ const CvPdfGenerator = {
                 // --- ALTERAÇÃO: Reestruturado para agrupar Pós-docs ---
                 const educationData = [
                     // Doutorado em Estatística
-                    { type: 'entry', date: 'edu-date1', title: 'edu-title1', institution: 'Universidade Federal de Viçosa (UFV)', advisor: 'edu-advisor1', details: 'edu-desc1' },
+                    { type: 'entry', date: 'edu-date2', title: 'edu-title2', institution: 'Universidade de São Paulo (USP)', advisor: 'edu-advisor2', details: 'edu-desc2' },
                     
                     // GRUPO DE PÓS-DOUTORADOS
                     {
@@ -1335,24 +1335,23 @@ const CvPdfGenerator = {
                         group_title: 'cv-edu-postdocs-title', // Chave "Pós-Doutorados"
                         items: [
                             // Pós-doc UFV
-                            { date: 'edu-date2', title: 'edu-title2', institution: 'Universidade Federal de Viçosa (UFV) — FAPEMIG', advisor: 'edu-advisor2', details: 'edu-desc2' },
+                            { date: 'edu-date', title: 'edu-title', institution: 'Universidade de Mons', advisor: 'edu-advisor', details: 'edu-desc' },
                             // Pós-doc Embrapa
-                            { date: null, title: 'edu-title4', institution: 'EMBRAPA Mandioca e Fruticultura — CNPq', advisor: 'edu-advisor4', details: 'edu-desc4', year: '2022' }
                         ]
                     },
 
                     // Doutorado em Genética
-                    { type: 'entry', date: null, title: 'edu-title5', institution: 'Universidade Federal de Viçosa (UFV)', advisor: 'edu-advisor5', details: 'edu-desc5', year: '2018 - 2022' },
+                    { type: 'entry', date: null, title: 'edu-title2', institution: 'Universidade de São Paulo (USP)', advisor: 'edu-advisor2', details: 'edu-desc2', year: '2021 - 2025' },
                     
                     // Mestrado
-                    { type: 'entry', date: null, title: 'edu-title6', institution: 'Universidade Federal de Viçosa (UFV)', advisor: 'edu-advisor6', details: 'edu-desc6', year: '2016 - 2018' },
+                    { type: 'entry', date: null, title: 'edu-title1', institution: 'Universidade de São Paulo (USP/ESALQ)', advisor: 'edu-advisor1', details: 'edu-desc1', year: '2024 - 2026' },
                     
                     // Graduação
-                    { type: 'entry', date: null, title: 'edu-title7', institution: 'Universidade Federal de Viçosa (UFV)', advisor: 'edu-advisor7', details: 'edu-desc7', year: '2010 - 2015' }
+                    { type: 'entry', date: null, title: 'edu-title7', institution: 'Universidade Federal de São João del Rei (UFSJ)', advisor: 'edu-advisor7', details: 'edu-desc7', year: '2015-2021' }
                 ];
                 
                 // Lista de chaves de TÍTULO a pular no CV Profissional
-                const pro_skip_keys = ['edu-title6', 'edu-title7'];
+                const pro_skip_keys = ['edu-title', 'edu-title2'];
 
                 educationData.forEach((item, index) => {
                     
@@ -1561,7 +1560,7 @@ const CvPdfGenerator = {
             } else { 
                 fileNameKey = 'cv-file-name-academic';
             }
-            const fileName = langContent[fileNameKey] || `CV-Weverton_Gomes_da_Costa_${cvType}_${lang}.pdf`; 
+            const fileName = langContent[fileNameKey] || `CV-Israel_C_Ribeiro_${cvType}_${lang}.pdf`; 
 
             doc.save(fileName);
 
@@ -1590,7 +1589,7 @@ const CvPdfGenerator = {
 // =================================================================================
 const ClipboardCopier = {
     init() {
-        const emailToCopy = 'wevertonufv@gmail.com';
+        const emailToCopy = 'israelribeiroc7@gmail.com';
 
         const copyTriggers = [
             document.getElementById('copy-email-link'),
@@ -2006,7 +2005,7 @@ const App = {
 
     _handleEmailCopy(event) {
         event.preventDefault();
-        const emailToCopy = 'wevertonufv@gmail.com';
+        const emailToCopy = 'israelcribeiro@gmail.com';
         navigator.clipboard.writeText(emailToCopy)
             .then(() => this.showToast(`Email: ${emailToCopy} copiado!`))
             .catch(err => {
