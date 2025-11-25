@@ -28,18 +28,32 @@
 0. CONFIGURAÇÕES GLOBAIS & DESIGN SYSTEM
 --- */
 :root {
-    --primary: #10b981;
-    --primary-dark: #059669;
-    --secondary: #3b82f6;
-    --dark: #0f172a;
-    --dark-light: #1e293b;
-    --text: #e2e8f0;
-    --text-muted: #94a3b8;
-    --accent: #f59e0b;
-    --bg-card: rgba(30, 41, 59, 0.5);
-    --border: rgba(148, 163, 184, 0.1);
-    --glow: rgba(16, 185, 129, 0.5);
+    /* --- PALETA QUANTUM (Roxo Tecnológico) --- */
+    
+    /* Cor Principal: Violeta Suave (Substitui o Verde) */
+    --primary: #8b5cf6;  /* Um roxo violeta equilibrado */
+    --primary-dark: #7c3aed; /* Um tom mais fechado para quando passar o mouse */
+    
+    /* Cor Secundária: Ciano (Para dar o contraste de "energia/ciência") */
+    --secondary: #06b6d4; 
+    
+    /* Fundos (Mantidos os originais pois são excelentes para contraste) */
+    --dark: #0f172a;      /* Azul noturno profundo */
+    --dark-light: #1e293b; /* Azul acinzentado para cartões */
+    
+    /* Textos */
+    --text: #e2e8f0;      /* Branco gelo */
+    --text-muted: #94a3b8; /* Cinza azulado */
+    
+    /* Acento: Laranja ou Rosa (Para detalhes pequenos) */
+    --accent: #f59e0b; 
+    
+    /* Efeitos de Vidro e Brilho (Ajustados para o Roxo) */
+    --bg-card: rgba(30, 41, 59, 0.6); /* Levemente mais opaco para leitura */
+    --border: rgba(139, 92, 246, 0.2); /* Borda com leve tom roxo */
+    --glow: rgba(139, 92, 246, 0.4);   /* O brilho "neon" agora é roxo suave */
     --glass: rgba(255, 255, 255, 0.03);
+    
     --error: #f44336;
 }
 
