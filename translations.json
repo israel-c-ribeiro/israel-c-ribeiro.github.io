@@ -10,9 +10,9 @@
     "footer-location": "Mons, Bélgica",
     "change-lang-title": "Mudar para Inglês",
 
-    "subtitle-1": "CEO & Fundador | Químico Computacional",
+    "subtitle-1": "Químico Computacional",
     "subtitle-2": "Especialista em Design de Materiais e Data Science",
-    "subtitle-3": "",
+    "subtitle-3": "CEO & Fundador da Quantum Master Inc",
     "subtitle-4": "",
     
     "cta-projects": "Ver Projetos",
@@ -23,7 +23,7 @@
     "nav-contact": "Contato",
 
     "about-title": "Sobre Mim",
-    "about-p1": "Sou Cientista de Materiais Computacional, CEO e Fundador da Quantum Master Inc. e Pesquisador na Universidade de Mons. Possuo doutorado em Físico-Química Teórica pela Universidade de São Paulo (USP), onde investiguei a passivação de superfície em filmes finos de perovskita utilizando a Teoria do Funcional da Densidade (DFT) para desvendar suas propriedades estruturais, energéticas e optoeletrônicas.",
+    "about-p1": "Sou Químico especializado em Ciência Computacional de Materiais, CEO & Fundador da Quantum Master Inc. e Pesquisador na Universidade de Mons. Possuo doutorado em Físico-Química Teórica pela Universidade de São Paulo (USP), onde investiguei a passivação de superfície em filmes finos de perovskita utilizando a Teoria do Funcional da Densidade (DFT) para desvendar suas propriedades estruturais, energéticas e optoeletrônicas.",
     "about-p2": "Também possuo MBA em Ciência de Dados e Análise pela USP, com foco em aplicações de Aprendizado de Máquina em pesquisa de materiais, e bacharelado em Química pela Universidade Federal de São João del Rei (UFSJ). Minha experiência combina conhecimentos acadêmicos e industriais, incluindo trabalho em P&D na AMG-Br e operações de laboratório no setor de mineralogia na Resind Indústria e Comércio Ltda.",
     "about-p3": "Anteriormente, atuei como monitor em diversos cursos de química e como professor voluntário de inglês por três anos, aprimorando minhas habilidades de comunicação e liderança. <strong>Áreas de interesse:</strong> Cálculos de Estrutura Eletrônica · Aprendizado de Máquina · Ciência dos Materiais · Química do Estado Sólido · Materiais Quânticos.",
 
@@ -56,6 +56,7 @@
     "edu-date-pd": "2026 - Presente",
     "edu-title-pd": "Pós-Doutorado em Química de Materiais",
     "edu-desc-pd": "Pesquisador na Université de Mons (UMONS), Bélgica.",
+    "edu-advisor": "Orientador: Prof. David Beljonne",
     
     "edu-date2": "2020 - 2025",
     "edu-title2": "Doutorado em Físico-Química Teórica",
@@ -72,7 +73,7 @@
     "edu-desc7": "Universidade Federal de São João del-Rei (UFSJ).",
     "edu-advisor7": "Orientador: Prof. Horacio W. Alves",
 
-    "edu-title-tec": "Técnico em Química",
+    "edu-title-tec": "Técnico em Química Industrial",
     "edu-desc-tec": "Centro de Ensino Profissionalizante (CENEP).",
 
     "qm-desc": "A Quantum Master Inc. é uma empresa de consultoria científica que transforma a ciência dos materiais em soluções industriais reais. Combinando experiência em ciência de dados, análise e ciência dos materiais, oferecemos consultoria personalizada para os setores de mineralogia, semicondutores e materiais inorgânicos.",
