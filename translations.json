@@ -23,9 +23,9 @@
     "nav-contact": "Contato",
 
     "about-title": "Sobre Mim",
-    "about-p1": "Sou Cientista de Materiais Computacional, CEO e Fundador da Quantum Master Inc. e Pesquisador na Universidade de Mons. [cite_start]Possuo doutorado em Físico-Química Teórica pela Universidade de São Paulo (USP) [cite: 8, 9][cite_start], onde investiguei a passivação de superfície em filmes finos de perovskita utilizando a Teoria do Funcional da Densidade (DFT) para desvendar suas propriedades estruturais, energéticas e optoeletrônicas[cite: 12].",
-    [cite_start]"about-p2": "Também possuo MBA em Ciência de Dados e Análise pela USP [cite: 14][cite_start], com foco em aplicações de Aprendizado de Máquina em pesquisa de materiais [cite: 17][cite_start], e bacharelado em Química pela Universidade Federal de São João del Rei (UFSJ)[cite: 18]. [cite_start]Minha experiência combina conhecimentos acadêmicos e industriais, incluindo trabalho em P&D na AMG-Br [cite: 66] [cite_start]e operações de laboratório no setor de mineralogia na Resind Indústria e Comércio Ltda[cite: 74].",
-    [cite_start]"about-p3": "Anteriormente, atuei como monitor em diversos cursos de química [cite: 45] e como professor voluntário de inglês por três anos, aprimorando minhas habilidades de comunicação e liderança. [cite_start]<strong>Áreas de interesse:</strong> Cálculos de Estrutura Eletrônica · Aprendizado de Máquina · Ciência dos Materiais · Química do Estado Sólido · Materiais Quânticos [cite: 7, 40-44].",
+    "about-p1": "Sou Cientista de Materiais Computacional, CEO e Fundador da Quantum Master Inc. e Pesquisador na Universidade de Mons. Possuo doutorado em Físico-Química Teórica pela Universidade de São Paulo (USP), onde investiguei a passivação de superfície em filmes finos de perovskita utilizando a Teoria do Funcional da Densidade (DFT) para desvendar suas propriedades estruturais, energéticas e optoeletrônicas.",
+    "about-p2": "Também possuo MBA em Ciência de Dados e Análise pela USP, com foco em aplicações de Aprendizado de Máquina em pesquisa de materiais, e bacharelado em Química pela Universidade Federal de São João del Rei (UFSJ). Minha experiência combina conhecimentos acadêmicos e industriais, incluindo trabalho em P&D na AMG-Br e operações de laboratório no setor de mineralogia na Resind Indústria e Comércio Ltda.",
+    "about-p3": "Anteriormente, atuei como monitor em diversos cursos de química e como professor voluntário de inglês por três anos, aprimorando minhas habilidades de comunicação e liderança. <strong>Áreas de interesse:</strong> Cálculos de Estrutura Eletrônica · Aprendizado de Máquina · Ciência dos Materiais · Química do Estado Sólido · Materiais Quânticos.",
 
     "services-title": "Meus Serviços", 
     "education-title": "Formação Acadêmica",
@@ -51,7 +51,56 @@
     "privacy-rights-p": "Você tem o direito de solicitar informações sobre os dados que forneceu... entrando em contato diretamente pelo email <a href='mailto:israelribeiroc7@gmail.com'>israelribeiroc7@gmail.com</a>.",
     "privacy-contact-p": "Se você tiver alguma dúvida sobre esta Política... entre em contato pelo email <a href='mailto:israelribeiroc7@gmail.com'>israelribeiroc7@gmail.com</a>.",
     "cv-file-name-pro": "CV-Israel_Ribeiro_Profissional.pdf",
-    "cv-file-name-academic": "CV-Israel_Ribeiro_Academico.pdf"
+    "cv-file-name-academic": "CV-Israel_Ribeiro_Academico.pdf",
+
+    "edu-date-pd": "2026 - Presente",
+    "edu-title-pd": "Pós-Doutorado em Química de Materiais",
+    "edu-desc-pd": "Pesquisador na Université de Mons (UMONS), Bélgica.",
+    
+    "edu-date2": "2020 - 2025",
+    "edu-title2": "Doutorado em Físico-Química Teórica",
+    "edu-desc2": "Universidade de São Paulo (USP).",
+    "edu-advisor2": "Orientador: Prof. Juarez L. F. Da Silva",
+
+    "edu-date1": "2024 - 2026",
+    "edu-title1": "MBA em Data Science e Analytics",
+    "edu-desc1": "Universidade de São Paulo (USP/ESALQ).",
+    "edu-advisor1": "Orientadora: Profa. Viviane Ferreira",
+
+    "edu-date7": "2015 - 2020",
+    "edu-title7": "Bacharelado em Química",
+    "edu-desc7": "Universidade Federal de São João del-Rei (UFSJ).",
+    "edu-advisor7": "Orientador: Prof. Horacio W. Alves",
+
+    "edu-title-tec": "Técnico em Química",
+    "edu-desc-tec": "Centro de Ensino Profissionalizante (CENEP).",
+
+    "qm-desc": "A Quantum Master Inc. é uma empresa de consultoria científica que transforma a ciência dos materiais em soluções industriais reais. Combinando experiência em ciência de dados, análise e ciência dos materiais, oferecemos consultoria personalizada para os setores de mineralogia, semicondutores e materiais inorgânicos.",
+    "qm-item1": "Soluções Industriais em Ciência dos Materiais",
+    "qm-item2": "Consultoria para Mineralogia e Semicondutores",
+    "qm-item3": "Insights Data-Driven para Competitividade",
+
+    "exp-title1": "Química Computacional",
+    "exp-desc1": "Simulações em escala atômica usando DFT (VASP, Quantum Espresso).",
+    "exp-title2": "Data Science & Analytics",
+    "exp-desc2": "Análise estatística, wrangling e visualização com Python e SQL.",
+    "exp-title3": "Machine Learning",
+    "exp-desc3": "Modelos preditivos para descoberta e otimização de materiais.",
+    "exp-title4": "Consultoria Industrial",
+    "exp-desc4": "Soluções para semicondutores e mineralogia.",
+    "exp-title5": "Caracterização Experimental",
+    "exp-desc5": "DRX, TGA, FTIR, UV-Vis e Microscopia (MEV/MET).",
+    "exp-title6": "Gestão & Estratégia",
+    "exp-desc6": "Liderança de projetos, 5S e inovação.",
+
+    "skill-name-vasp": "VASP",
+    "skill-name-qe": "Quantum Espresso",
+    "skill-name-fhi": "FHI-aims",
+    "skill-name-gaussian": "Gaussian",
+    "skill-name-python": "Python",
+    "skill-name-sql": "SQL",
+    "skill-name-r": "R & Julia",
+    "skill-name-git": "Git & GitHub"
   },
   "en": {
     "page-title": "Dr. Israel C. Ribeiro | CEO | Computational Chemist | PhD",
@@ -116,9 +165,9 @@
     "nav-skills": "Skills",
     "nav-contact": "Contact",
     "about-title": "About Me",
-    "about-p1": "I am a Computational Materials Scientist and CEO and Founder of Quantum Master Inc and a Researcher at University of Mons. [cite_start]I hold a Ph.D. in Theoretical Physical Chemistry from the University of São Paulo (USP) [cite: 8, 9][cite_start], where I investigated surface passivation on perovskite thin films using Density Functional Theory (DFT) to uncover their structural, energetic, and optoelectronic properties[cite: 12].",
-    [cite_start]"about-p2": "I also hold an MBA in Data Science and Analytics from USP [cite: 14][cite_start], focusing on Machine Learning applications in materials research [cite: 17][cite_start], and a B.Sc. in Chemistry from the Federal University of São João del Rei (UFSJ)[cite: 18]. [cite_start]My background combines academic and industrial experience, including R&D work at AMG-Br [cite: 66] [cite_start]and laboratory operations in the mineralogy sector at Resind Indústria e Comércio Ltda[cite: 74].",
-    [cite_start]"about-p3": "Previously, I served as a teaching assistant for several chemistry courses [cite: 45] and volunteered as an English teacher for three years, strengthening my communication and leadership skills. [cite_start]<strong>Interests:</strong> Electronic Structure Calculations · Machine Learning · Materials Science · Solid-State Chemistry · Quantum Materials [cite: 7, 40-44].",
+    "about-p1": "I am a Computational Materials Scientist and CEO and Founder of Quantum Master Inc and a Researcher at University of Mons. I hold a Ph.D. in Theoretical Physical Chemistry from the University of São Paulo (USP), where I investigated surface passivation on perovskite thin films using Density Functional Theory (DFT) to uncover their structural, energetic, and optoelectronic properties.",
+    "about-p2": "I also hold an MBA in Data Science and Analytics from USP, focusing on Machine Learning applications in materials research, and a B.Sc. in Chemistry from the Federal University of São João del Rei (UFSJ). My background combines academic and industrial experience, including R&D work at AMG-Br and laboratory operations in the mineralogy sector at Resind Indústria e Comércio Ltda.",
+    "about-p3": "Previously, I served as a teaching assistant for several chemistry courses and volunteered as an English teacher for three years, strengthening my communication and leadership skills. <strong>Interests:</strong> Electronic Structure Calculations · Machine Learning · Materials Science · Solid-State Chemistry · Quantum Materials.",
     "services-title": "My Core Services",
     "service-title1": "Scientific Consulting",
     "service-desc1": "Tailored solutions for the materials industry focused on efficiency, cost reduction via simulation, and process optimization.",
@@ -129,8 +178,8 @@
     "education-title": "Academic Education",
     "edu-date-pd": "2026 - Present",
     "edu-title-pd": "Postdoc in Materials Chemistry",
-    "edu-desc-pd": "Research at the University of Mons (UMONS), focusing on computational modeling and advanced materials design.",
-    "edu-advisor-pd": "<strong>Institution:</strong> UMONS, Belgium.",
+    "edu-desc-pd": "Research at the University of Mons (UMONS), Belgium.",
+    "edu-advisor-pd": "<strong>Institution:</strong> UMONS.",
     "edu-date1": "2024 - 2026",
     "edu-title1": "MBA in Data Science and Analytics",
     "edu-desc1": "Final Project: Machine Learning Applied to Materials Science. Focus on statistical modeling and big data.",
@@ -143,6 +192,9 @@
     "edu-title7": "BSc in Chemistry",
     "edu-desc7": "Minor in Materials Chemistry. Undergraduate thesis on structural and electronic properties of GaN.",
     "edu-advisor7": "<strong>Advisor:</strong> Prof. Horacio W. Alves (UFSJ).",
+    "edu-title-tec": "Chemical Technician",
+    "edu-desc-tec": "Professional Training Center (CENEP).",
+    
     "expertise-title": "Areas of Expertise",
     "exp-title1": "Computational Chemistry",
     "exp-desc1": "Atomic-scale simulations using DFT (VASP, Quantum Espresso) to predict structural and optoelectronic properties.",
@@ -154,12 +206,14 @@
     "exp-desc4": "Providing technological solutions for the semiconductor, mineralogy, and inorganic materials sectors.",
     "exp-title5": "Materials Characterization",
     "exp-desc5": "Solid experience with experimental techniques including XRD, TGA, FTIR, UV-Vis, and Microscopy (SEM/TEM).",
-    "exp-title7": "Leadership & Strategy",
-    "exp-desc7": "Leading innovation projects, implementing 5S quality programs, and bridging the gap between science and business.",
+    "exp-title6": "Leadership & Strategy",
+    "exp-desc6": "Leading innovation projects, implementing 5S quality programs, and bridging the gap between science and business.",
+    
     "qm-desc": "Quantum Master Inc. is a scientific consulting firm transforming materials science into real-world industrial solutions. Combining expertise in data science, analytics, and materials science, we deliver tailored consulting for the mineralogy, semiconductor, and inorganic materials sectors.",
     "qm-item1": "Industrial Solutions in Materials Science",
     "qm-item2": "Consulting for Mineralogy & Semiconductors",
     "qm-item3": "Data-Driven Insights for Competitiveness",
+    
     "skills-title": "Technical Skills",
     "skills-cat-1": "Scientific Software",
     "skill-name-vasp": "VASP",
@@ -181,6 +235,7 @@
     "skill-name-sem": "SEM / TEM",
     "skill-name-spec": "UV-Vis / FTIR",
     "skill-name-syn": "Sol-Gel Synthesis",
+    
     "projects-title": "Projects & Repositories",
     "projects-intro": "Below are some of my public repositories reflecting my work in computational chemistry pipelines, data analysis, and machine learning applied to materials.",
     "search-placeholder": "Search repository...",
@@ -193,6 +248,7 @@
     "all-projects-intro": "Explore the complete list of all my public projects and repositories.",
     "showing_repos_template": "Showing {shown} of {total} repositories.",
     "clear-search": "Clear search",
+    
     "publications-title": "Selected Publications",
     "publications-intro": "My scientific production focuses on Perovskites, DFT simulations, and Materials Design in high-impact journals.",
     "search-pub-placeholder": "Search by title, journal...",
@@ -220,6 +276,7 @@
     "chart-yaxis-title": "Number of Citations",
     "chart-colorbar-title": "Number of Publications",
     "clear-pub-search": "Clear publications search",
+    
     "contact-title": "Let's Talk",
     "contact-intro": "I am open to new scientific collaborations, industrial consulting, and data science projects. Use the form below to get in touch.",
     "contact-quick-links": "Quick Links",
@@ -240,6 +297,7 @@
     "formSending": "Sending...",
     "formSuccess": "Message sent successfully. Thank you for contacting me!",
     "formError": "An error occurred while sending. Please try again.",
+    
     "privacy-title": "Privacy Policy",
     "privacy-intro-title": "1. Introduction",
     "privacy-intro-p": "This Privacy Policy describes how personal information is collected, used, and shared when you visit this website.",
@@ -266,32 +324,38 @@
     "privacy-contact-title": "8. Contact",
     "privacy-contact-p": "If you have any questions, please contact me at <a href='mailto:israelribeiroc7@gmail.com'>israelribeiroc7@gmail.com</a>.",
     "privacy-back-link": "← Back to the main site",
+    
     "cv-generating": "Preparing your CV...",
     "cv-download-started": "Download started!",
     "cv-error": "An error occurred while generating the PDF.",
+    
     "cv-edu-postdocs-title": "Postdoctoral Research",
     "cv-edu-postdocs-line1": "University of Mons (UMONS), Belgium",
     "cv-edu-postdocs-year1": "2026 – Present",
     "cv-file-name-pro": "CV-Israel_Ribeiro_Professional_EN.pdf",
     "cv-file-name-academic": "CV-Israel_Ribeiro_Academic_EN.pdf",
+    
     "pdf-location": "Mons - Belgium",
     "pdf-view-site": "[View Site]",
     "pdf-view-repo": "[Repository]",
     "pdf-more-projects": "For more projects, please visit the website's projects page.",
     "pdf-more-publications": "For more publications, please visit the website's publications page.",
     "pdf-cited-by": "Cited {count} times",
+    
     "education": {
       "professional": [
         { "special_key": "postdocs" },
         { "degree": "edu-title2", "institution": "edu-advisor2", "year": "2020 - 2025" },
         { "degree": "edu-title1", "institution": "edu-advisor1", "year": "2024 - 2026" },
-        { "degree": "edu-title7", "institution": "edu-advisor7", "year": "2015 - 2020" }
+        { "degree": "edu-title7", "institution": "edu-advisor7", "year": "2015 - 2020" },
+        { "degree": "edu-title-tec", "institution": "edu-desc-tec", "year": "Concluded" }
       ],
       "academic": [
         { "special_key": "postdocs" },
         { "degree": "edu-title2", "institution": "edu-advisor2", "year": "2020 - 2025" },
         { "degree": "edu-title1", "institution": "edu-advisor1", "year": "2024 - 2026" },
-        { "degree": "edu-title7", "institution": "edu-advisor7", "year": "2015 - 2020" }
+        { "degree": "edu-title7", "institution": "edu-advisor7", "year": "2015 - 2020" },
+        { "degree": "edu-title-tec", "institution": "edu-desc-tec", "year": "Concluded" }
       ]
     },
     "lattes_summary": "Dr. Israel C. Ribeiro holds a PhD in Theoretical Physical Chemistry from USP (2025) and a BSc in Chemistry from UFSJ (2020). He is currently a Postdoctoral Researcher at the University of Mons (UMONS), Belgium. He is also the CEO and Founder of Quantum Master Inc. His expertise covers Density Functional Theory (DFT) simulations (VASP, QE), Machine Learning applied to Materials Science, and Perovskite thin films.",
