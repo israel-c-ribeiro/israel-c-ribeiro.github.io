@@ -1,19 +1,182 @@
 {
-  "githubRepos": [
-    {
-      "name": "israel-c-ribeiro.github.io",
-      "description": "Químico com interesse no design computacional de materiais.",
-      "html_url": "https://github.com/israel-c-ribeiro/israel-c-ribeiro.github.io",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "language": "HTML",
-      "topics": [
-        "portfolio",
-        "data-science",
-        "ai"
-      ],
-      "updated_at": "2025-11-21T12:00:00Z"
+    "githubRepos": [
+        {
+            "name": "VASP_tools",
+            "html_url": "https://github.com/israel-c-ribeiro/VASP_tools",
+            "homepage": null,
+            "description": "VASP Tools is a repository dedicated to providing a collection of Python scripts and utilities for post-processing results from Density Functional Theory (DFT) calculations performed using VASP. These scripts are designed to streamline and automate common tasks, making it easier to analyze, manipulate, and visualize data from VASP simulations.",
+            "language": "Python",
+            "stargazers_count": 1,
+            "forks_count": 0,
+            "updated_at": "2025-11-24T12:00:00Z",
+            "topics": [
+                "vasp",
+                "dft",
+                "python",
+                "computational-chemistry",
+                "materials-science"
+            ]
+        },
+        {
+            "name": "israel-c-ribeiro.github.io",
+            "html_url": "https://github.com/israel-c-ribeiro/israel-c-ribeiro.github.io",
+            "homepage": "https://israel-c-ribeiro.github.io",
+            "description": "Personal academic portfolio and CV website for Dr. Israel C. Ribeiro, featuring automated publication updates and project showcases.",
+            "language": "HTML",
+            "stargazers_count": 0,
+            "forks_count": 0,
+            "updated_at": "2025-11-25T19:09:23Z",
+            "topics": [
+                "portfolio",
+                "academic",
+                "cv"
+            ]
+        }
+    ],
+    "scholarData": {
+        "profile": {
+            "cited_by": {
+                "table": [
+                    {
+                        "citations": {
+                            "all": 51,
+                            "since_2020": 50
+                        }
+                    },
+                    {
+                        "h_index": {
+                            "all": 3,
+                            "since_2020": 3
+                        }
+                    },
+                    {
+                        "i10_index": {
+                            "all": 1,
+                            "since_2020": 1
+                        }
+                    }
+                ],
+                "graph": [
+                    {
+                        "year": 2019,
+                        "citations": 1
+                    },
+                    {
+                        "year": 2020,
+                        "citations": 3
+                    },
+                    {
+                        "year": 2021,
+                        "citations": 5
+                    },
+                    {
+                        "year": 2022,
+                        "citations": 8
+                    },
+                    {
+                        "year": 2023,
+                        "citations": 10
+                    },
+                    {
+                        "year": 2024,
+                        "citations": 10
+                    },
+                    {
+                        "year": 2025,
+                        "citations": 14
+                    }
+                ]
+            }
+        },
+        "articles": [
+            {
+                "title": "Impact of Thin Film Thickness on the Structural, Energetic and Optoelectronic Properties of Two-Dimensional FPEA2(MAn-1)PbnI3n+1 Perovskites",
+                "doi": "10.1021/acsaem.4c02800",
+                "doiLink": "https://doi.org/10.1021/acsaem.4c02800",
+                "year": "2025",
+                "journalTitle": "ACS Applied Energy Materials",
+                "link": "https://doi.org/10.1021/acsaem.4c02800",
+                "cited_by": {
+                    "value": 3
+                }
+            },
+            {
+                "title": "Unveiling the Impact of Organic Cation Passivation on Structural and Optoelectronic Properties of Two-Dimensional Perovskites Thin Films",
+                "doi": "10.1016/j.apsusc.2024.161098",
+                "doiLink": "https://doi.org/10.1016/j.apsusc.2024.161098",
+                "year": "2024",
+                "journalTitle": "Applied Surface Science",
+                "link": "https://doi.org/10.1016/j.apsusc.2024.161098",
+                "cited_by": {
+                    "value": 7
+                }
+            },
+            {
+                "title": "Role of the Adsorption of Alkali Cations on Ultrathin n-Layers of Two-Dimensional Perovskites",
+                "doi": "10.1021/acs.jpcc.3c01894",
+                "doiLink": "https://doi.org/10.1021/acs.jpcc.3c01894",
+                "year": "2023",
+                "journalTitle": "Journal of Physical Chemistry C",
+                "link": "https://doi.org/10.1021/acs.jpcc.3c01894",
+                "cited_by": {
+                    "value": 8
+                }
+            },
+            {
+                "title": "CaTiO3: Er3+: Yb3+ Upconversion from 980 nm to 1550 nm Excitation and its Potential as Cells Luminescent Probes",
+                "doi": "10.1016/j.matchemphys.2018.11.018",
+                "doiLink": "https://doi.org/10.1016/j.matchemphys.2018.11.018",
+                "year": "2019",
+                "journalTitle": "Materials Chemistry and Physics",
+                "link": "https://doi.org/10.1016/j.matchemphys.2018.11.018",
+                "cited_by": {
+                    "value": 33
+                }
+            },
+            {
+                "title": "Delving into Transition Metal Single-atom Doping Effects in Two-Dimensional Perovskite Thin Films",
+                "doi": null,
+                "doiLink": null,
+                "year": "2025",
+                "journalTitle": "Pending Submission",
+                "link": null,
+                "cited_by": {
+                    "value": 0
+                }
+            },
+            {
+                "title": "Enhanced Catalytic Efficiency in Ammonia Synthesis: The Role of Ferrites and Graphenes in Electrocatalytic Reduction of N2",
+                "doi": null,
+                "doiLink": null,
+                "year": "2025",
+                "journalTitle": "Pending Submission",
+                "link": null,
+                "cited_by": {
+                    "value": 0
+                }
+            },
+            {
+                "title": "Role of Ni, Cu, Ag, and Au Points Defects in the Degradation of MAPbI3 Perovskite",
+                "doi": null,
+                "doiLink": null,
+                "year": "2025",
+                "journalTitle": "Pending Submission",
+                "link": null,
+                "cited_by": {
+                    "value": 0
+                }
+            },
+            {
+                "title": "Ab initio Investigation on Structural and Electronic Properties of 2D III-Nitride Monolayers",
+                "doi": null,
+                "doiLink": null,
+                "year": "2025",
+                "journalTitle": "Pending Submission",
+                "link": null,
+                "cited_by": {
+                    "value": 0
+                }
+            }
+        ]
     }
-  ],
-  "scholarData": {}
 }
