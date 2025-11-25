@@ -1270,10 +1270,9 @@ const CvPdfGenerator = {
              // --- ALTERAÇÃO (Sugestão 1: Refatoração do PDF) ---
              addSectionTitle(pdfStrings['skills-title'] || (langContent['skills-title'] || 'HABILIDADES TÉCNICAS'));
              const skillKeys = [
-                'skill-name-r', 'skill-name-genes', 'skill-name-selegen', 'skill-name-python',
-                'skill-name-eda', 'skill-name-ml', 'skill-name-deep-learning',
-                'skill-name-genomic-sel', 'skill-name-mixed-models', 'skill-name-quant-gen', 'skill-name-bioinfo',
-                'skill-name-dataviz', 'skill-name-git', 'skill-name-shiny', 'skill-name-html'
+                'skill-name-r', 'Teoria do Funcional da Densidade', 'Análise de Dados (Wrangling)', 'skill-name-python',
+                'Machine Learning (Scikit-Learn)', 'Deep Learning (TensorFlow)', 'VASP',
+                'FHI-aims', 'Gaussian'
              ];
              const skills = skillKeys.map(key => `• ${langContent[key] || key}`);
              
