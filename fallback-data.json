@@ -1,0 +1,19 @@
+{
+  "githubRepos": [
+    {
+      "name": "guilhermecarrico.github.io",
+      "description": "Meu portfólio pessoal de Data Science e IA, desenvolvido com foco em automação e design responsivo.",
+      "html_url": "https://github.com/guilhermecarrico/guilhermecarrico.github.io",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "HTML",
+      "topics": [
+        "portfolio",
+        "data-science",
+        "ai"
+      ],
+      "updated_at": "2025-11-21T12:00:00Z"
+    }
+  ],
+  "scholarData": {}
+}
