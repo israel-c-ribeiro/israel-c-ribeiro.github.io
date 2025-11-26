@@ -134,33 +134,33 @@
                 }
             },
             {
-                "title": "Delving into Transition Metal Single-atom Doping Effects in Two-Dimensional Perovskite Thin Films",
+                "title": "Theoretical and Experimental Insights into Transition Metal Single-Atom Adsorption Effects on Perovskite Surfaces",
+                "doi": "10.1021/acs.jpcc.5c04429",
+                "doiLink": "https://doi.org/10.1021/acs.jpcc.5c04429",
+                "year": "2025",
+                "journalTitle": "The Journal of Physical Chemistry C",
+                "link": "https://doi.org/10.1021/acs.jpcc.5c04429",
+                "cited_by": {
+                    "value": 0
+                }
+            },
+            {
+                "title": "Enhancing Surface Termination and Stability of Hybrid Halide Perovskites via Phosphonic Acid Passivation",
                 "doi": null,
                 "doiLink": null,
                 "year": "2025",
-                "journalTitle": "Pending Submission",
+                "journalTitle": "ACS Omega",
                 "link": null,
                 "cited_by": {
                     "value": 0
                 }
             },
             {
-                "title": "Enhanced Catalytic Efficiency in Ammonia Synthesis: The Role of Ferrites and Graphenes in Electrocatalytic Reduction of N2",
+                "title": "Metal Defects in MAPbI3 Perovskites: Uncovering the Roles of Ni, Cu, Ag, and Au",
                 "doi": null,
                 "doiLink": null,
                 "year": "2025",
-                "journalTitle": "Pending Submission",
-                "link": null,
-                "cited_by": {
-                    "value": 0
-                }
-            },
-            {
-                "title": "Role of Ni, Cu, Ag, and Au Points Defects in the Degradation of MAPbI3 Perovskite",
-                "doi": null,
-                "doiLink": null,
-                "year": "2025",
-                "journalTitle": "Pending Submission",
+                "journalTitle": "ACS Omega",
                 "link": null,
                 "cited_by": {
                     "value": 0
