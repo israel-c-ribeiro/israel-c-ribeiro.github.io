@@ -1033,7 +1033,7 @@ const CvPdfGenerator = {
                 // --- BLOCO 3: DESENHAR O CONTORNO (BORDA) ---
                 
                 // Define a cor da borda (a mesma 'themeColor' do seu PDF)
-                const themeColor = '#10b981';
+                const themeColor = '#8b5cf6';
                 // Define a largura da borda. 
                 // Usamos um valor relativo (ex: 1.5% do tamanho) para escalar bem.
                 const borderWidth = size * 0.015; // 1.5%
@@ -1250,9 +1250,9 @@ const CvPdfGenerator = {
             // --- ALTERAÇÃO (Sugestão 1: Refatoração do PDF) ---
              addSectionTitle(pdfStrings['services-title'] || (langContent['services-title'] || 'COMO POSSO AJUDAR'));
              const services = [
-                { titleKey: 'service-title1', descKey: 'service-desc1' },
-                { titleKey: 'service-title2', descKey: 'service-desc2' },
-                { titleKey: 'service-title3', descKey: 'service-desc3' }
+                { titleKey: 'Consultoria Científica', descKey: 'Soluções para a indústria de materiais focadas em eficiência e redução de custos via simulação. <strong>Acesse:</strong> www.QuantumMasterInc.com' },
+                { titleKey: 'P&D de Materiais', descKey: 'Desenvolvimento de novos materiais para optoeletrônica e fotovoltaicos.' },
+                { titleKey: 'Treinamento', descKey: 'Tratamento de dados complexos (Big Data) e insights para tomada de decisão estratégica.' }
              ];
              services.forEach(service => {
                  const title = langContent[service.titleKey] || 'Service Title';
