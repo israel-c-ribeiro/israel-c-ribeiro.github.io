@@ -67,23 +67,23 @@
                     },
                     {
                         "year": 2021,
-                        "citations": 5
-                    },
-                    {
-                        "year": 2022,
                         "citations": 8
                     },
                     {
+                        "year": 2022,
+                        "citations": 5
+                    },
+                    {
                         "year": 2023,
-                        "citations": 10
+                        "citations": 3
                     },
                     {
                         "year": 2024,
-                        "citations": 10
+                        "citations": 11
                     },
                     {
                         "year": 2025,
-                        "citations": 14
+                        "citations": 18
                     }
                 ]
             }
@@ -141,7 +141,7 @@
                 "journalTitle": "The Journal of Physical Chemistry C",
                 "link": "https://doi.org/10.1021/acs.jpcc.5c04429",
                 "cited_by": {
-                    "value": 0
+                    "value": 1
                 }
             },
             {
@@ -157,11 +157,11 @@
             },
             {
                 "title": "Metal Defects in MAPbI3 Perovskites: Uncovering the Roles of Ni, Cu, Ag, and Au",
-                "doi": null,
-                "doiLink": null,
+                "doi": "10.1021/acsomega.5c09558",
+                "doiLink": "https://doi.org/10.1021/acsomega.5c09558",
                 "year": "2025",
                 "journalTitle": "ACS Omega",
-                "link": null,
+                "link": "https://doi.org/10.1021/acsomega.5c09558",
                 "cited_by": {
                     "value": 0
                 }
