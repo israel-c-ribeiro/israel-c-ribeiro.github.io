@@ -1172,10 +1172,10 @@ const CvPdfGenerator = {
             // --- ALTERAÇÃO: Adicionando todos os subtítulos ---
             
             // Subtítulo 1
-            doc.setFontSize(12).setFont('helvetica', 'normal').setTextColor(themeColor).text(langContent['subtitle-1'] || 'Computational Materials Scientist', headerX, y + 30, { maxWidth: headerW });
+            doc.setFontSize(12).setFont('helvetica', 'normal').setTextColor(themeColor).text(langContent['subtitle-1'] || 'Chemist', headerX, y + 30, { maxWidth: headerW });
             
             // Subtítulo 2
-            doc.setFontSize(10).setFont('helvetica', 'normal').setTextColor(80).text(langContent['subtitle-2'] || '', headerX, y + 44, { maxWidth: headerW });
+            doc.setFontSize(10).setFont('helvetica', 'normal').setTextColor(80).text(langContent['subtitle-2'] || 'Computational Materials Scientist', headerX, y + 44, { maxWidth: headerW });
             
             // Subtítulo 3
             doc.setFontSize(10).setFont('helvetica', 'normal').setTextColor(80).text(langContent['subtitle-3'] || '', headerX, y + 57, { maxWidth: headerW });
@@ -1247,23 +1247,39 @@ const CvPdfGenerator = {
             }
 
             // --- SERVIÇOS / FRENTES DE ATUAÇÃO ---
-            // --- ALTERAÇÃO (Sugestão 1: Refatoração do PDF) ---
-             addSectionTitle(pdfStrings['services-title'] || (langContent['services-title'] || 'COMO POSSO AJUDAR'));
-             const services = [
-                { titleKey: 'Consultoria Científica', descKey: 'Soluções para a indústria de materiais focadas em eficiência e redução de custos via simulação. <strong>Acesse:</strong> www.QuantumMasterInc.com' },
-                { titleKey: 'P&D de Materiais', descKey: 'Desenvolvimento de novos materiais para optoeletrônica e fotovoltaicos.' },
-                { titleKey: 'Treinamento', descKey: 'Tratamento de dados complexos (Big Data) e insights para tomada de decisão estratégica.' }
-             ];
-             services.forEach(service => {
-                 const title = langContent[service.titleKey] || 'Service Title';
-                 const description = langContent[service.descKey] || 'Service Description';
-                 checkPageBreak(40); 
-                 doc.setFontSize(10).setFont('helvetica', 'bold').setTextColor(themeColor);
-                 doc.text(`• ${title}`, margin, y);
-                 y += 12;
-                 addJustifiedText(description, { x: margin + 8, width: max_width - 8, fontSize: 9 }); 
-                 y += item_gap / 2;
-             });
+            // --- ALTERAÇÃO (Corrigida para usar texto direto) ---
+            addSectionTitle(pdfStrings['services-title'] || (langContent['services-title'] || 'COMO POSSO AJUDAR'));
+            
+            // Lista de serviços com texto direto (sem keys de tradução)
+            const services = [
+                { 
+                    title: 'Consultoria Científica', 
+                    description: 'Soluções para a indústria de materiais focadas em eficiência e redução de custos via simulação. Acesse: www.QuantumMasterInc.com' 
+                },
+                { 
+                    title: 'P&D de Materiais', 
+                    description: 'Desenvolvimento de novos materiais para optoeletrônica e fotovoltaicos.' 
+                },
+                { 
+                    title: 'Treinamento', 
+                    description: 'Tratamento de dados complexos (Big Data) e insights para tomada de decisão estratégica.' 
+                }
+            ];
+
+            services.forEach(service => {
+                checkPageBreak(40);
+                
+                // Título
+                doc.setFontSize(10).setFont('helvetica', 'bold').setTextColor(themeColor);
+                doc.text(`• ${service.title}`, margin, y);
+                y += 12;
+                
+                // Descrição
+                // Nota: O addJustifiedText já limpa HTML, então tags como <strong> seriam ignoradas.
+                addJustifiedText(service.description, { x: margin + 8, width: max_width - 8, fontSize: 9 });
+                y += item_gap / 2;
+            });
+            // --- FIM ALTERAÇÃO ---
              // --- FIM ALTERAÇÃO ---
 
              // --- HABILIDADES TÉCNICAS ---
