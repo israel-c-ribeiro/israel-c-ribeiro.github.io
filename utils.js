@@ -1172,10 +1172,10 @@ const CvPdfGenerator = {
             // --- ALTERAÇÃO: Adicionando todos os subtítulos ---
             
             // Subtítulo 1
-            doc.setFontSize(12).setFont('helvetica', 'normal').setTextColor(themeColor).text(langContent['subtitle-1'] || 'Chemist', headerX, y + 30, { maxWidth: headerW });
+            doc.setFontSize(12).setFont('helvetica', 'normal').setTextColor(themeColor).text(langContent['subtitle-1'] || 'Químico Computacional', headerX, y + 30, { maxWidth: headerW });
             
             // Subtítulo 2
-            doc.setFontSize(10).setFont('helvetica', 'normal').setTextColor(80).text(langContent['subtitle-2'] || 'Computational Materials Scientist', headerX, y + 44, { maxWidth: headerW });
+            doc.setFontSize(10).setFont('helvetica', 'normal').setTextColor(80).text(langContent['subtitle-2'] || 'Cientista de Materiais', headerX, y + 44, { maxWidth: headerW });
             
             // Subtítulo 3
             doc.setFontSize(10).setFont('helvetica', 'normal').setTextColor(80).text(langContent['subtitle-3'] || '', headerX, y + 57, { maxWidth: headerW });
@@ -1318,8 +1318,7 @@ const CvPdfGenerator = {
                 { titleKey: 'exp-title2', descKey: 'exp-desc2' },
                 { titleKey: 'exp-title3', descKey: 'exp-desc3' },
                 { titleKey: 'exp-title4', descKey: 'exp-desc4' },
-                { titleKey: 'exp-title5', descKey: 'exp-desc5' },
-                { titleKey: 'exp-title7', descKey: 'exp-desc7' } // Vem do ID 'exp-title7' no HTML
+                { titleKey: 'exp-title5', descKey: 'exp-desc5' } // Vem do ID 'exp-title7' no HTML
             ];
             expertiseAreas.forEach(area => {
                 const title = `• ${langContent[area.titleKey] || 'Area Title'}:`;
