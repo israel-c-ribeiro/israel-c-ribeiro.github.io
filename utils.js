@@ -1261,8 +1261,8 @@ const CvPdfGenerator = {
                     description: 'Desenvolvimento de novos materiais para optoeletrônica e fotovoltaicos.' 
                 },
                 { 
-                    title: 'Treinamento', 
-                    description: 'Tratamento de dados complexos (Big Data) e insights para tomada de decisão estratégica.' 
+                    title: 'Ciências de Dados', 
+                    description: 'Tratamento de dados complexos (Big Data), análise e ciências de dados para insights em função de tomada de decisão estratégica.' 
                 }
             ];
 
@@ -1335,141 +1335,80 @@ const CvPdfGenerator = {
             });
             // --- FIM ALTERAÇÃO ---
 
-            // --- FORMAÇÃO ACADÊMICA ---
-                addSectionTitle(pdfStrings['education-title'] || (langContent['education-title'] || 'FORMAÇÃO ACADÊMICA'));
+        // --- FORMAÇÃO ACADÊMICA ---
+addSectionTitle(pdfStrings['education-title'] || (langContent['education-title'] || 'FORMAÇÃO ACADÊMICA'));
 
-                // --- ALTERAÇÃO: Reestruturado para agrupar Pós-docs ---
-                const educationData = [
-                    // Doutorado em Estatística
-                    { type: 'entry', date: 'edu-date2', title: 'edu-title2', institution: 'Universidade de São Paulo (USP)', advisor: 'edu-advisor2', details: 'edu-desc2' },
-                    
-                    // GRUPO DE PÓS-DOUTORADOS
-                    {
-                        type: 'group',
-                        group_title: 'cv-edu-postdocs-title', // Chave "Pós-Doutorados"
-                        items: [
-                            // Pós-doc UFV
-                            { date: 'edu-date', title: 'edu-title', institution: 'Universidade de Mons', advisor: 'edu-advisor', details: 'edu-desc' },
-                            // Pós-doc Embrapa
-                        ]
-                    },
+// --- ALTERAÇÃO: ESTRUTURA E ORDEM CORRIGIDA (LINEAR) ---
+const educationData = [
+    // 1. Pós-Doutorado UMONS (Topo da Timeline)
+    { type: 'entry', date: 'edu-date-pd', title: 'edu-title-pd', institution: 'Université de Mons (UMONS), Bélgica', advisor: 'edu-advisor-pd', details: 'edu-desc-pd', year: langContent['edu-date-pd'] },
+    
+    // 2. Doutorado USP
+    { type: 'entry', date: 'edu-date2', title: 'edu-title2', institution: 'Universidade de São Paulo (USP) - São Carlos', advisor: 'edu-advisor2', details: 'edu-desc2', year: langContent['edu-date2'] },
+    
+    // 3. MBA USP/ESALQ
+    { type: 'entry', date: 'edu-date1', title: 'edu-title1', institution: 'Universidade de São Paulo (USP/ESALQ)', advisor: 'edu-advisor1', details: 'edu-desc1', year: langContent['edu-date1'] },
+    
+    // 4. Bacharelado UFSJ
+    { type: 'entry', date: 'edu-date7', title: 'edu-title7', institution: 'Universidade Federal de São João del Rei (UFSJ)', advisor: 'edu-advisor7', details: 'edu-desc7', year: '2015-2021' },
+    
+    // 5. Técnico CENEP (Base da Timeline)
+    { type: 'entry', date: 'edu-date-tec-year', title: 'edu-title-tec', institution: 'Centro de Ensino Profissionalizante (CENEP)', advisor: 'edu-advisor-tec', details: 'edu-desc-tec', year: 'Concluído' }
+];
 
-                    // Doutorado em Genética
-                    { type: 'entry', date: null, title: 'edu-title2', institution: 'Universidade de São Paulo (USP)', advisor: 'edu-advisor2', details: 'edu-desc2', year: '2021 - 2025' },
-                    
-                    // Mestrado
-                    { type: 'entry', date: null, title: 'edu-title1', institution: 'Universidade de São Paulo (USP/ESALQ)', advisor: 'edu-advisor1', details: 'edu-desc1', year: '2024 - 2026' },
-                    
-                    // Graduação
-                    { type: 'entry', date: null, title: 'edu-title7', institution: 'Universidade Federal de São João del Rei (UFSJ)', advisor: 'edu-advisor7', details: 'edu-desc7', year: '2015-2021' }
-                ];
-                
-                // Lista de chaves de TÍTULO a pular no CV Profissional
-                const pro_skip_keys = ['edu-title', 'edu-title2'];
+// Lista de chaves de TÍTULO a pular no CV Profissional (BSc e Técnico)
+// Usamos as chaves literais do campo 'title'
+const pro_skip_keys = ['edu-title7', 'edu-title-tec'];
 
-                educationData.forEach((item, index) => {
-                    
-                    // --- LÓGICA DE FILTRO CORRIGIDA ---
-                    // Se for 'pro' E o item for uma 'entry' E seu título estiver na lista de pular
-                    if (cvType === 'pro' && item.type === 'entry' && pro_skip_keys.includes(item.title)) {
-                        return; // Pula Mestrado e Graduação no CV Pro
-                    }
+educationData.forEach((item) => {
+    const itemTitleKey = item.title;
 
-                    checkPageBreak(60);
+    // --- LÓGICA DE FILTRO: Pula itens se for CV Profissional E o título estiver na lista de exclusão.
+    if (cvType === 'pro' && pro_skip_keys.includes(itemTitleKey)) {
+        return; 
+    }
 
-                    // --- LÓGICA DE RENDERIZAÇÃO CORRIGIDA ---
-                    
-                    if (item.type === 'group') {
-                        // --- INÍCIO DO BLOCO DE GRUPO (Pós-Doutorados) ---
-                        
-                        // 1. Renderiza o Título Principal do Grupo (ex: "Pós-Doutorados")
-                        const groupTitle = langContent[item.group_title] || 'Pós-Doutorados';
-                        doc.setFontSize(10).setFont('helvetica', 'bold').setTextColor(40).text(groupTitle, margin, y);
-                        y += 12; // Espaçamento após o título do grupo
+    checkPageBreak(60);
 
-                        // 2. Itera sobre os sub-itens (UFV e Embrapa)
-                        item.items.forEach(subItem => {
-                            checkPageBreak(60);
-                            
-                            // Puxa os dados do sub-item
-                            const date = subItem.year ? subItem.year : (langContent[subItem.date] || 'Date');
-                            const institution = subItem.institution;
-                            const advisorHTML = langContent[subItem.advisor] || '';
-                            const details = langContent[subItem.details] || '';
+    // --- LÓGICA DE RENDERIZAÇÃO (Mantida do bloco entry) ---
+    const title = langContent[itemTitleKey] || itemTitleKey;
+    const date = item.year;
+    const institution = item.institution;
+    const advisorHTML = langContent[item.advisor] || '';
+    const details = langContent[item.details] || '';
 
-                            // Renderiza Instituição e Data (sem título principal, como pedido)
-                            doc.setFontSize(9).setFont('helvetica', 'italic').setTextColor(80).text(institution, margin, y);
-                            doc.setFontSize(9).setFont('helvetica', 'normal').setTextColor(100).text(date, page_width - margin, y, { align: 'right' });
-                            y += 12;
+    // Renderiza Título e Data
+    doc.setFontSize(10).setFont('helvetica', 'bold').setTextColor(40).text(title, margin, y);
+    doc.setFontSize(9).setFont('helvetica', 'normal').setTextColor(100).text(date, page_width - margin, y, { align: 'right' });
+    y += 12;
 
-                            // Renderiza Advisor (com tradução correta)
-                            if (advisorHTML) {
-                                const cleanedAdvisor = this.stripHtml(advisorHTML);
-                                let translatedAdvisor = cleanedAdvisor;
-                                if (lang === 'pt') {
-                                    translatedAdvisor = cleanedAdvisor.replace('Advisor:', 'Orientador:').replace('Co-advisor:', 'Coorientador:');
-                                } else {
-                                    translatedAdvisor = cleanedAdvisor.replace('Orientador:', 'Advisor:').replace('Coorientador:', 'Co-advisor:');
-                                }
-                                const advisorLines = doc.splitTextToSize(translatedAdvisor, max_width);
-                                doc.setFontSize(8).setFont('helvetica', 'normal').setTextColor(100);
-                                doc.text(advisorLines, margin, y);
-                                y += advisorLines.length * 10 + 3;
-                            }
-                            
-                            // Renderiza Detalhes (Sempre, para Pós-docs)
-                            if (details) {
-                                addJustifiedText(details, { fontSize: 8, width: max_width });
-                            }
-                            y += item_gap; // Gap entre os Pós-docs
-                        });
-                        // --- FIM DO BLOCO DE GRUPO ---
+    // Renderiza Instituição
+    doc.setFontSize(9).setFont('helvetica', 'italic').setTextColor(80).text(institution, margin, y);
+    y += 12;
 
-                    } else if (item.type === 'entry') {
-                        // --- INÍCIO DO BLOCO NORMAL (PhD, MSc, BSc) ---
-                        const title = langContent[item.title] || 'Title';
-                        const date = item.year ? item.year : (langContent[item.date] || 'Date');
-                        const institution = item.institution;
-                        const advisorHTML = langContent[item.advisor] || '';
-                        const details = langContent[item.details] || '';
+    // Renderiza Advisor (com tradução correta)
+    if (advisorHTML) {
+        const cleanedAdvisor = this.stripHtml(advisorHTML);
+        let translatedAdvisor = cleanedAdvisor;
+        if (lang === 'pt') {
+            translatedAdvisor = cleanedAdvisor.replace('Advisor:', 'Orientador:').replace('Co-advisor:', 'Coorientador:');
+        } else {
+            translatedAdvisor = cleanedAdvisor.replace('Orientador:', 'Advisor:').replace('Coorientador:', 'Co-advisor:');
+        }
+        const advisorLines = doc.splitTextToSize(translatedAdvisor, max_width);
+        doc.setFontSize(8).setFont('helvetica', 'normal').setTextColor(100);
+        doc.text(advisorLines, margin, y);
+        y += 12; 
+    }
+    
+    // Renderiza Detalhes (Exceto no CV Pro para os itens pulados)
+    if (details && (cvType !== 'pro' || !pro_skip_keys.includes(itemTitleKey))) {
+        addJustifiedText(details, { fontSize: 8, width: max_width });
+    }
 
-                        // Renderiza Título e Data
-                        doc.setFontSize(10).setFont('helvetica', 'bold').setTextColor(40).text(title, margin, y);
-                        doc.setFontSize(9).setFont('helvetica', 'normal').setTextColor(100).text(date, page_width - margin, y, { align: 'right' });
-                        y += 12;
-
-                        // Renderiza Instituição
-                        doc.setFontSize(9).setFont('helvetica', 'italic').setTextColor(80).text(institution, margin, y);
-                        y += 12;
-
-                        // Renderiza Advisor (com tradução correta)
-                        if (advisorHTML) {
-                            const cleanedAdvisor = this.stripHtml(advisorHTML);
-                            let translatedAdvisor = cleanedAdvisor;
-                            if (lang === 'pt') {
-                                translatedAdvisor = cleanedAdvisor.replace('Advisor:', 'Orientador:').replace('Co-advisor:', 'Coorientador:');
-                            } else {
-                                translatedAdvisor = cleanedAdvisor.replace('Orientador:', 'Advisor:').replace('Coorientador:', 'Co-advisor:');
-                            }
-                            const advisorLines = doc.splitTextToSize(translatedAdvisor, max_width);
-                            doc.setFontSize(8).setFont('helvetica', 'normal').setTextColor(100);
-                            doc.text(advisorLines, margin, y);
-                            y += advisorLines.length * 10 + 3;
-                        }
-                        
-                        // LÓGICA DE DETALHES CORRIGIDA
-                        // Mostra detalhes se:
-                        // 1. For CV Acadêmico
-                        // 2. Ou for CV Profissional E NÃO estiver na lista de pular (ou seja, mostra para PhDs)
-                        if (details && (cvType !== 'pro' || !pro_skip_keys.includes(item.title))) {
-                            addJustifiedText(details, { fontSize: 8, width: max_width });
-                        }
-
-                        y += item_gap; // Gap entre as entradas principais
-                        // --- FIM DO BLOCO NORMAL ---
-                    }
-                });
-             // --- FIM ALTERAÇÃO ---
+    y += item_gap; // Gap entre as entradas principais
+});
+// --- FIM DA PARTE CORRIGIDA ---
 
             // --- PROJETOS ---
              // (Esta seção já estava boa, lendo do estado do módulo JS)
