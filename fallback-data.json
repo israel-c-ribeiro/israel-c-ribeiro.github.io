@@ -39,7 +39,7 @@
                 "table": [
                     {
                         "citations": {
-                            "all": 53,
+                            "all": 54,
                             "since_2020": 50
                         }
                     },
@@ -79,11 +79,11 @@
                     },
                     {
                         "year": 2024,
-                        "citations": 11
+                        "citations": 12
                     },
                     {
                         "year": 2025,
-                        "citations": 18
+                        "citations": 20
                     }
                 ]
             }
@@ -108,7 +108,7 @@
                 "journalTitle": "Applied Surface Science",
                 "link": "https://doi.org/10.1016/j.apsusc.2024.161098",
                 "cited_by": {
-                    "value": 7
+                    "value": 8
                 }
             },
             {
@@ -119,7 +119,7 @@
                 "journalTitle": "Journal of Physical Chemistry C",
                 "link": "https://doi.org/10.1021/acs.jpcc.3c01894",
                 "cited_by": {
-                    "value": 8
+                    "value": 9
                 }
             },
             {
