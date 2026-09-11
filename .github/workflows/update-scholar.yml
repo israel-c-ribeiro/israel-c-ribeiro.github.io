@@ -6,16 +6,25 @@ on:
     - cron: "0 6 * * 1"
   workflow_dispatch:
 
+# The job needs to push data/scholar.json back to the repository.
+# This also requires, once, in the repository settings:
+#   Settings → Actions → General → Workflow permissions → "Read and write permissions"
 permissions:
   contents: write
+
+concurrency:
+  group: refresh-citations
+  cancel-in-progress: false
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: true
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -25,14 +34,26 @@ jobs:
       - name: Refresh data/scholar.json
         run: python scripts/update_scholar.py
 
-      - name: Commit if changed
+      - name: Commit and push if changed
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set -e
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           if git diff --quiet -- data/scholar.json; then
             echo "No change in citation data."
-          else
-            git add data/scholar.json
-            git commit -m "data: refresh citation metrics ($(date -u +%Y-%m-%d))"
-            git push
+            exit 0
+          fi
+
+          git add data/scholar.json
+          git commit -m "data: refresh citation metrics ($(date -u +%Y-%m-%d))"
+
+          # Someone may have pushed while this job ran: replay our commit on top.
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+
+          if ! git push origin "HEAD:${GITHUB_REF_NAME}"; then
+            echo "::error::Push was rejected. Open Settings → Actions → General → Workflow permissions and select 'Read and write permissions', then re-run this workflow."
+            exit 1
           fi

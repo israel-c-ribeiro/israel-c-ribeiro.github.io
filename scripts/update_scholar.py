@@ -219,7 +219,7 @@ def main() -> int:
         data["metrics_updated"] = data["updated"]
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    OUT.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
     log(f"wrote {OUT} ({data['source']}, {data['metrics']['citations']} citations, {len(data['publications'])} publications)")
     return 0
 

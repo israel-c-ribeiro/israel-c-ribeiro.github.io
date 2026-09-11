@@ -2,7 +2,7 @@
  * attributes in index.html. Keys ending in "_html" are injected as HTML. */
 window.I18N = {
   en: {
-    "meta.title": "Israel C. Ribeiro · Computational Materials Chemist",
+    "meta.title": "Dr. Israel C. Ribeiro · Computational Materials Chemist",
     "meta.description": "Israel C. Ribeiro, Ph.D. — computational materials chemist at the University of Mons. DFT, machine-learning interatomic potentials and materials informatics for halide perovskites and energy materials.",
 
     "nav.research": "Research",
@@ -180,7 +180,7 @@ window.I18N = {
   },
 
   pt: {
-    "meta.title": "Israel C. Ribeiro · Químico Computacional de Materiais",
+    "meta.title": "Dr. Israel C. Ribeiro · Químico Computacional de Materiais",
     "meta.description": "Israel C. Ribeiro, Ph.D. — químico computacional de materiais na Universidade de Mons. DFT, potenciais interatômicos por aprendizado de máquina e informática de materiais para perovskitas e materiais para energia.",
 
     "nav.research": "Pesquisa",
@@ -358,7 +358,7 @@ window.I18N = {
   },
 
   fr: {
-    "meta.title": "Israel C. Ribeiro · Chimiste computationnel des matériaux",
+    "meta.title": "Dr. Israel C. Ribeiro · Chimiste computationnel des matériaux",
     "meta.description": "Israel C. Ribeiro, Ph.D. — chimiste computationnel des matériaux à l'Université de Mons. DFT, potentiels interatomiques par apprentissage automatique et informatique des matériaux pour les pérovskites et les matériaux pour l'énergie.",
 
     "nav.research": "Recherche",
