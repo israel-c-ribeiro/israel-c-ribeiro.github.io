@@ -1,509 +1,485 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="page-title">Dr. Israel C. Ribeiro | Materials Modeling</title>
-    <meta name="description" id="meta-description" content="Dr. Israel C. Ribeiro - Químico com interesse no design computacional de materiais.">
-    <meta name="keywords" id="meta-keywords" content="Quantum Master Inc, CEO, Químico Computacional, Materiais, Mons Belgium, Data Science, Consultoria Científica, UMONS">
-    <meta name="author" content="Dr. Israel C. Ribeiro">
-    <meta name="google-site-verification" content="F1n6JnIxAr1VYPspf3Ai56y4IL5PESFMoTXKxo1WBnI" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛️</text></svg>">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Israel C. Ribeiro · Computational Materials Chemist</title>
+  <meta name="description" content="Israel C. Ribeiro, Ph.D. — computational materials chemist at the University of Mons. DFT, machine-learning interatomic potentials and materials informatics for halide perovskites and energy materials.">
+  <meta name="author" content="Israel C. Ribeiro">
+  <meta name="google-site-verification" content="F1n6JnIxAr1VYPspf3Ai56y4IL5PESFMoTXKxo1WBnI">
+  <meta property="og:title" content="Israel C. Ribeiro · Computational Materials Chemist">
+  <meta property="og:description" content="DFT, machine-learning interatomic potentials and materials informatics for halide perovskites and energy materials.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://israel-c-ribeiro.github.io/">
+  <meta property="og:image" content="https://github.com/israel-c-ribeiro.png">
+  <meta name="theme-color" content="#0C111C">
+  <link rel="canonical" href="https://israel-c-ribeiro.github.io/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23F0B245'/%3E%3Cpath d='M32 12 52 32 32 52 12 32Z' fill='none' stroke='%231A1204' stroke-width='4' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%231A1204'/%3E%3C/svg%3E">
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    // Apply the saved theme before first paint to avoid a flash.
+    try { var th = localStorage.getItem("theme"); if (th === "light" || th === "dark") document.documentElement.dataset.theme = th; } catch (e) {}
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Israel C. Ribeiro",
+    "honorificPrefix": "Dr.",
+    "jobTitle": "Postdoctoral Researcher, Computational Materials Science",
+    "affiliation": { "@type": "Organization", "name": "Université de Mons" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of São Paulo" },
+      { "@type": "CollegeOrUniversity", "name": "Federal University of São João del-Rei" }
+    ],
+    "email": "mailto:israelribeiroc7@gmail.com",
+    "url": "https://israel-c-ribeiro.github.io/",
+    "sameAs": [
+      "https://orcid.org/0000-0002-5272-8752",
+      "https://scholar.google.com/citations?user=GQugll8AAAAJ",
+      "https://github.com/israel-c-ribeiro",
+      "https://www.linkedin.com/in/israel-ribeiro1/",
+      "http://lattes.cnpq.br/3550877645196037",
+      "https://www.researchgate.net/profile/Israel-Ribeiro"
+    ]
+  }
+  </script>
 </head>
 
-<body id="index-page">
-    <button class="lang-switcher lang-fixed" onclick="toggleLanguage()" data-key-title="change-lang-title">
-        <span class="lang-pt active">PT</span> | <span class="lang-en">EN</span>
-    </button>
-    <canvas id="particle-canvas"></canvas>
-    <a href="#" class="back-to-top" data-key-aria-label="back-to-top-label">↑</a>    
-    
-    <header>
-        <div class="hero-content">
-            <img src="https://github.com/israel-c-ribeiro.png" alt="Dr. Israel C. Ribeiro" class="avatar" width="280" height="280" loading="lazy" decoding="async">
-            <h1 id="hero-name">Dr. Israel C. Ribeiro</h1>
-            <p class="subtitle" id="subtitle">Químico Computacional de Materiais</p>
+<body>
+  <!-- ============================ NAV ============================ -->
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Israel C. Ribeiro, home">
+        <span class="brand-mark" aria-hidden="true">IR</span>
+        <span>Israel C. Ribeiro</span>
+      </a>
 
-            <div class="hero-cta">
-                <a href="#" class="cta-btn primary" data-cv-type="pro">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
-                    <span data-key="cta-cv-pro">Download CV (Resumo)</span>
-                </a>
-            
-                <a href="http://lattes.cnpq.br/3550877645196037" target="_blank" class="cta-btn secondary btn-small">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
-                    <span data-key="cta-cv-academic">Acessar Lattes</span>
-                </a>
-            </div>
-            <div class="hero-links">
-                <a href="#licae-conecta" class="link-btn secondary btn-small" data-key="cta-startup">Quantum Master Inc.</a> 
-                <a href="#contato" class="link-btn secondary btn-small" data-key="cta-contact">Contato</a>
-            </div>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#research" data-i18n="nav.research">Research</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#publications" data-i18n="nav.publications">Publications</a>
+        <a href="#code" data-i18n="nav.code">Code</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
 
-            <div class="badges">
-                <span class="badge" data-key="badge-ceo">🚀 CEO Quantum Master Inc.</span>
-                <span class="badge" data-key="badge-postdoc">🔬 Postdoc Researcher (UMONS)</span>
-                <span class="badge" data-key="badge-phd">🎓 Ph.D. in Physical-Chemistry (USP)</span>
-                <span class="badge" data-key="badge-loc">🇧🇪 Mons, Belgium</span>
-            </div>
+      <div class="nav-tools">
+        <div class="lang-switch" role="group" aria-label="Language" data-i18n-title="lang.label">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+          <button type="button" data-lang="fr" aria-pressed="false">FR</button>
         </div>
-        <div class="scroll-indicator" aria-hidden="true">⬇</div>
-    </header>
-
-    <nav>
-        <div class="nav-container">
-            <div class="nav-col-left">
-                <img src="https://github.com/israel-c-ribeiro.png" alt="Avatar Navbar" class="nav-avatar">
-            </div>
-
-            <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
-            
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span class="hamburger"></span>
-            </label>
-            <div class="nav-col-center">
-                <a href="#sobre" class="nav-link" data-key="nav-about">Sobre</a>
-                <a href="#experiencia" class="nav-link" data-key="nav-experience">Atuação</a>
-                <a href="#servicos" class="nav-link" data-key="nav-services">Serviços</a>
-                <a href="#formacao" class="nav-link" data-key="nav-education">Formação</a>
-                <a href="#projetos" class="nav-link" data-key="nav-projects">Projetos</a>
-                <a href="#publicacoes" class="nav-link" data-key="nav-publications">Publicações</a>
-                <a href="#habilidades" class="nav-link" data-key="nav-skills">Habilidades</a>
-                <a href="#contato" class="nav-link" data-key="nav-contact">Contato</a>
-            </div>
-            <div class="nav-col-right">
-                <button class="lang-switcher" onclick="toggleLanguage()" data-key-title="change-lang-title">
-                    <span class="lang-pt active">PT</span> | <span class="lang-en">EN</span>
-                </button>
-            </div>
-        </div>
-    </nav>
-
-    <main class="container">
-        <section id="sobre" class="section">
-            <h2 class="reveal" data-key="about-title">Sobre Mim</h2>
-            <div class="card reveal">
-                 <p data-key="about-p1">Sou o <strong>Dr. Israel C. Ribeiro</strong>, Químico Computacional de Materiais e CEO da Quantum Master Inc. Minha sólida trajetória acadêmica culmina com meu Pós-Doutorado na Universidade de Mons (UMONS), Bélgica, após obter meu Ph.D em Físico-Química Teórica pela USP.</p>
-                <p data-key="about-p2">Sediado em <strong>Mons, Belgium</strong>, atuo na interface estratégica entre a pesquisa acadêmica de alto nível e a inovação industrial. Especialista em simulações DFT e Data Science, dedico-me a solucionar problemas complexos em ciência dos materiais.</p>
-                <p data-key="about-p3">Como fundador da Quantum Master Inc., lidero iniciativas que transformam dados e modelos teóricos em vantagens competitivas para os setores de mineralogia, semicondutores e materiais inorgânicos.</p>
-            </div>
-        </section>
-
-        <section id="experiencia" class="section">
-            <h2 class="reveal" data-key="expertise-title">Áreas de Atuação</h2>
-            <div class="grid stagger-children">
-                 <div class="card reveal"><span class="icon" role="img" aria-label="Atom">⚛️</span><h3 data-key="exp-title1">Química Computacional</h3><p data-key="exp-desc1">Simulações de primeiros princípios (DFT) usando VASP e Quantum Espresso para design de materiais.</p></div>
-                <div class="card reveal"><span class="icon" role="img" aria-label="Gráfico">📊</span><h3 data-key="exp-title2">Data Analytics</h3><p data-key="exp-desc2">Análise estatística avançada, visualização e tratamento de dados com Python (Pandas, Seaborn).</p></div>
-                <div class="card reveal"><span class="icon" role="img" aria-label="Robô">🤖</span><h3 data-key="exp-title3">Machine Learning</h3><p data-key="exp-desc3">Desenvolvimento de modelos preditivos aplicados à descoberta e otimização de materiais.</p></div>
-                <div class="card reveal"><span class="icon" role="img" aria-label="Ferramentas">🛠️</span><h3 data-key="exp-title4">Consultoria Industrial</h3><p data-key="exp-desc4">Soluções tecnológicas para setores de semicondutores e mineralogia.</p></div>
-                <div class="card reveal"><span class="icon" role="img" aria-label="Microscopio">🔬</span><h3 data-key="exp-title5">Química dos Materiais</h3><p data-key="exp-desc5">Experiência em ciências de materiais com foco em química inorgânica.</p></div>
-                <div class="card reveal"><span class="icon" role="img" aria-label="Liderança">🚀</span><h3 data-key="exp-title6">Gestão & Estratégia</h3><p data-key="exp-desc6">Liderança de projetos de inovação e implementação de melhorias de processos.</p></div>
-            </div>
-        </section>
- 
-        <section id="servicos" class="section">
-            <h2 class="reveal" data-key="services-title">Como Posso Ajudar</h2>
-            <div class="grid stagger-children">
-                <div class="card reveal">
-                    <span class="icon" role="img" aria-label="Consultoria">🤝</span>
-                    <h3 data-key="service-title1">Consultoria Científica</h3>
-                    <p data-key="service-desc1">Soluções para a indústria de materiais focadas em eficiência e redução de custos via simulação. Conheça a <strong>Quantum Master Inc.</strong> — mais informações no final da página.</p>
-                </div>
-                <div class="card reveal">
-                    <span class="icon" role="img" aria-label="Colaboração">🔬</span>
-                    <h3 data-key="service-title2">P&D de Materiais</h3>
-                    <p data-key="service-desc2">Desenvolvimento de novos materiais inorgânicos ou híbridos para aplicações em optoeletrônica e fotovoltaicos. Insights químicos para testes de qualidade e processos.</p>
-                </div>
-                <div class="card reveal">
-                    <span class="icon" role="img" aria-label="Treinamento">👨‍🏫</span>
-                    <h3 data-key="service-title3">Análise de Dados</h3>
-                    <p data-key="service-desc3">Tratamento de dados complexos (Big Data) e insights para tomada de decisão estratégica via ferramentas de análise e ciência de dados.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="formacao" class="section">
-            <h2 class="reveal" data-key="education-title">Formação Acadêmica</h2>
-            <div class="timeline stagger-children">
-                
-                <div class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-content card">
-                    <div class="timeline-header">
-                        <div>
-                            <div class="timeline-date" data-key="edu-date-pd">2026 - Presente</div>
-                            <h3 data-key="edu-title-pd">Pós-Doutorado em Química de Materiais</h3>
-                            <p>Université de Mons (UMONS), Bélgica</p>
-                        </div>
-                    </div> 
-                    <p class="small-muted" data-key="edu-advisor">PI: Prof. David Beljonne</p>
-                    <div class="timeline-details" data-key="edu-desc-pd">
-                        Pesquisador focado em modelagem computacional e desenvolvimento de novos materiais.
-                    </div>
-                    <button class="toggle-details-btn" data-key="toggle-details-more">Ver mais</button>
-                </div></div>
-
-                <div class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-content card">
-                     <div class="timeline-header">
-                        <div>
-                            <div class="timeline-date" data-key="edu-date2">2020 - 2025</div>
-                            <h3 data-key="edu-title2">Doutorado em Físico-Química Teórica</h3>
-                            <p>Universidade de São Paulo (USP), São Carlos</p>
-                        </div>
-                    </div>
-                    <p class="small-muted" data-key="edu-advisor2">Orientador: Prof. Juarez L. F. Da Silva</p>
-                    <div class="timeline-details" data-key="edu-desc2">
-                        Tese: Investigações em escala atômica sobre a passivação metálica e orgânica de filmes finos de Perovskitas 2D.
-                    </div>
-                    <button class="toggle-details-btn" data-key="toggle-details-more">Ver mais</button>
-                </div></div>
-
-                <div class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-content card">
-                    <div class="timeline-header">
-                        <div>
-                            <div class="timeline-date" data-key="edu-date1">2024 - 2026</div>
-                            <h3 data-key="edu-title1">MBA em Data Science and Analytics</h3>
-                            <p>Universidade de São Paulo (USP)</p>
-                        </div>
-                    </div>
-                    <p class="small-muted" data-key="edu-advisor1">Orientadora: Profa. Gabrielle Lombardi</p>
-                    <div class="timeline-details" data-key="edu-desc1">
-                        Projeto Final: Machine Learning Aplicado à Ciência dos Materiais.
-                    </div>
-                    <button class="toggle-details-btn" data-key="toggle-details-more">Ver mais</button>
-                </div></div>
-
-                <div class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-content card">
-                    <div class="timeline-header">
-                        <div>
-                            <div class="timeline-date">2015 - 2020</div>
-                            <h3 data-key="edu-title7">Bacharelado em Química</h3>
-                            <p>Universidade Federal de São João del-Rei (UFSJ)</p>
-                        </div>
-                    </div>
-                    <p class="small-muted" data-key="edu-advisor7">Orientador: Prof. Horacio W. Alves</p>
-                    <div class="timeline-details" data-key="edu-desc7">
-                        Menor em Química de Materiais. [cite_start]Tese de graduação em propriedades estruturais e eletrônicas de GaN [cite: 18-19].
-                    </div>
-                    <button class="toggle-details-btn" data-key="toggle-details-more">Ver mais</button>
-                </div></div>
-
-                <div class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-content card">
-                    <div class="timeline-header">
-                        <div>
-                            <div class="timeline-date">2013 - 2015</div>
-                            <h3 data-key="edu-title-tec">Técnico em Química</h3>
-                            <p>Centro de Ensino Profissionalizante (CENEP)</p>
-                        </div>
-                    </div>
-                    <div class="timeline-details" data-key="edu-desc-tec">
-                        Formação técnica profissionalizante em Química.
-                    </div>
-                </div></div>
-
-            </div>
-        </section>
-
-        <section id="projetos" class="section" aria-labelledby="projetos-title">
-            <h2 id="projetos-title" class="reveal" data-key="projects-title">Projetos & Repositórios</h2>
-            <p class="section-intro reveal" data-key="projects-intro">Uma seleção de projetos em Química Computacional hospedados no GitHub.</p>
-            <div class="sidebar">
-                <div class="controls reveal">
-                    <input id="project-search" aria-label="Buscar repositório" data-key-placeholder="search-placeholder" placeholder="Buscar...">
-                    <button id="clear-btn" title="Limpar busca" data-key-title="clear-search" data-key="clear-btn">Limpar</button>
-                </div>
-                <div class="meta reveal" id="projects-meta"></div>
-                <div class="projects stagger-children" id="projects-list" role="list">
-                    <div class="skeleton-card"></div>
-                    <div class="skeleton-card"></div>
-                    <div class="skeleton-card"></div>
-                </div>
-                <div class="reveal load-more-container">
-                    <div class="small-muted" id="shown-count">—</div>
-                    <div class="center">
-                        <button id="toggle-more" class="link-btn" data-key="show-more">Mostrar mais</button>
-                        <a href="https://github.com/israel-c-ribeiro" target="_blank" class="link-btn secondary" data-key="see-all-projects">Ver no GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </section>
- 
-        <section id="publicacoes" class="section">
-           <h2 class="reveal" data-key="publications-title">Publicações e Citações</h2>
-            <p class="section-intro reveal" data-key="publications-intro"></p>
-            <div class="card reveal scholar-summary-card">
-                <div class="scholar-header">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"><path d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32zm0 464c-132.5 0-240-107.5-240-240S123.5 16 256 16s240 107.5 240 240-107.5 240-240 240z"/><path d="M256 96c-88.4 0-160 71.6-160 160s71.6 160 160 160 160-71.6 160-160S344.4 96 256 96zm0 288c-70.7 0-128-57.3-128-128s57.3-128 128-128 128 57.3 128 128-57.3 128-128 128z"/></svg>
-                    <h3>Google Scholar</h3>
-                </div>
-                <div class="scholar-metrics">
-                    <div class="metric-item">
-                        <div class="metric-label" data-key="metric-label-citations">Citações</div>
-                        <div>
-                            <span class="metric-value" id="cit-total">—</span> <span data-key="metric-all">TODOS</span> /
-                            <span class="metric-value-period" id="cit-period">—</span> <span data-key="metric-since">DESDE 2020</span>
-                        </div>
-                    </div>
-                    <div class="metric-item">
-                        <div class="metric-label" data-key="metric-label-h-index">Índice h</div>
-                        <div>
-                            <span class="metric-value" id="h-total">—</span> <span data-key="metric-all">TODOS</span> /
-                            <span class="metric-value-period" id="h-period">—</span> <span data-key="metric-since">DESDE 2020</span>
-                        </div>
-                    </div>
-                    <div class="metric-item">
-                        <div class="metric-label" data-key="metric-label-i10-index">Índice i10</div>
-                        <div>
-                            <span class="metric-value" id="i10-total">—</span> <span data-key="metric-all">TODOS</span> /
-                            <span class="metric-value-period" id="i10-period">—</span> <span data-key="metric-since">DESDE 2020</span>
-                        </div>
-                    </div>
-                </div>
-                <div id="interactive-scholar-chart-container" class="scholar-chart-container reveal"></div>
-            </div>
-            <div class="controls reveal">
-                <input id="publication-search" aria-label="Buscar publicações" data-key-placeholder="search-pub-placeholder">
-                <button id="publication-clear-btn" title="Limpar busca" data-key-title="clear-pub-search" data-key="clear-btn">Limpar</button>
-            </div>
-            <div class="grid stagger-children" id="publicacoes-grid">
-                <div class="card reveal">
-                    <h3>Impact of Thin Film Thickness on Perovskites</h3>
-                    <p class="small-muted">ACS Applied Energy Materials (2025)</p>
-                    [cite_start]<p>DOI: 10.1021/acsaem.4c02800 [cite: 81-84]</p>
-                 </div>
-                 <div class="card reveal">
-                    <h3>Unveiling the Impact of Organic Cation Passivation</h3>
-                    <p class="small-muted">Applied Surface Science (2024)</p>
-                    [cite_start]<p>DOI: 10.1016/j.apsusc.2024.161098 [cite: 86-91]</p>
-                 </div>
-                 <div class="card reveal">
-                    <h3>Role of the Adsorption of Alkali Cations</h3>
-                    <p class="small-muted">Journal of Physical Chemistry C (2023)</p>
-                    [cite_start]<p>DOI: 10.1021/acs.jpcc.3c01894 [cite: 93-97]</p>
-                 </div>
-            </div>
-            <div class="reveal load-more-container">
-                <div class="small-muted" id="pubs-shown-count">—</div>
-                <div class="center">
-                    <button id="pubs-toggle-more" class="link-btn" data-key="show-more">Mostrar mais</button>
-                    <a href="publicacoes.html" class="link-btn secondary" data-key="see-all-publications">Ver Todas</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="licae-conecta" class="section">
-    <h2 class="reveal">Empreendedorismo & Inovação</h2>
-    <div class="feature-section reveal card" style="border-left: 5px solid #0D8ABC;">
-        <div class="feature-logo" role="img" aria-label="Logo Quantum Master">
-            <img src="quantum_master_inc_logo.png" alt="Logo Quantum Master Inc." style="width: 100%; height: auto; border-radius: 8px;">
-        </div>
-        <div class="feature-content">
-            <h3>Quantum Master Inc.</h3>
-            <p class="small-muted">CEO & Fundador: Dr. Israel C. Ribeiro</p>
-            <p data-key="qm-desc">
-                Somos uma empresa de consultoria científica transformando a ciência dos materiais em soluções industriais do mundo real. Combinando expertise em ciência de dados, analytics e ciência dos materiais, entregamos consultoria personalizada para os setores de mineralogia, semicondutores e materiais inorgânicos.
-            </p>
-            <h4 style="margin-top:1rem; font-size: 1rem; color: var(--primary-color);">Nossa Missão:</h4>
-            <p style="font-style: italic; margin-bottom: 1rem;">
-                "Conectar a pesquisa acadêmica e a inovação industrial, fornecendo insights precisos baseados em dados que aumentam a eficiência, o desempenho e a competitividade."
-            </p>
-            <ul class="feature-list">
-                <li data-key="qm-item1">Soluções Industriais em Ciência dos Materiais.</li>
-                <li data-key="qm-item2">Consultoria para Mineralogia e Semicondutores.</li>
-                <li data-key="qm-item3">Insights Data-Driven para Alta Competitividade.</li>
-            </ul>
-
-            <div style="margin-top: 20px;">
-                <a href="https://www.quantummasterinc.com" target="_blank" rel="noopener" class="link-btn" style="display: inline-flex; align-items: center; gap: 8px;">
-                    <span>🌐</span>
-                    <span><strong>Acesse:</strong> www.QuantumMasterInc.com</span>
-                </a>
-            </div>
-
-        </div>
+        <button class="icon-btn" id="theme-toggle" type="button" data-i18n-title="theme.toggle" title="Toggle light / dark theme">
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="icon-btn nav-burger" id="nav-burger" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n-title="nav.menu" title="Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
     </div>
-</section>
+  </header>
 
-        <section id="habilidades" class="section">
-            <h2 class="reveal" data-key="skills-title">Habilidades Técnicas</h2>
-            <div class="skills-grid">
-                <div class="skill-category reveal stagger-children card">
-                    <h3 data-key="skills-cat-1">Softwares Científicos</h3>
-                    <div class="skill-item" data-level="95%"><span class="skill-name">VASP</span><div class="skill-bar-container"><div class="skill-bar" style="width: 95%"></div></div></div>
-                    <div class="skill-item" data-level="90%"><span class="skill-name">Quantum Espresso</span><div class="skill-bar-container"><div class="skill-bar" style="width: 90%"></div></div></div>
-                    <div class="skill-item" data-level="85%"><span class="skill-name">FHI-aims</span><div class="skill-bar-container"><div class="skill-bar" style="width: 85%"></div></div></div>
-                    <div class="skill-item" data-level="80%"><span class="skill-name">Gaussian</span><div class="skill-bar-container"><div class="skill-bar" style="width: 80%"></div></div></div>
-                </div>
-                <div class="skill-category reveal stagger-children card">
-                    <h3 data-key="skills-cat-2">Programação & Dados</h3>
-                      <div class="skill-item" data-level="90%"><span class="skill-name">Python</span><div class="skill-bar-container"><div class="skill-bar" style="width: 90%"></div></div></div>
-                    <div class="skill-item" data-level="85%"><span class="skill-name">SQL</span><div class="skill-bar-container"><div class="skill-bar" style="width: 85%"></div></div></div>
-                    <div class="skill-item" data-level="75%"><span class="skill-name">R & Julia</span><div class="skill-bar-container"><div class="skill-bar" style="width: 75%"></div></div></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contato" class="section">
-              <h2 class="reveal" data-key="contact-title">Contato</h2>
-              <p data-key="contact-intro" class="section-intro reveal"></p>
-              <div class="contact-container reveal">
-                  <form id="contact-form" class="contact-form" action="https://formspree.io/f/xanzkolw" method="POST">
-                      <div class="form-group">
-                          <label for="name" data-key="form-name">Nome</label>
-                          <input type="text" id="name" name="name" required data-key-placeholder="form-name-ph">
-                          <span class="error-message"></span>
-                      </div>
-                      <div class="form-group">
-                          <label for="email" data-key="form-email">Email</label>
-                          <input type="email" id="email" name="email" required data-key-placeholder="form-email-ph">
-                          <span class="error-message"></span>
-                      </div>
-                      <div class="form-group">
-                          <label for="subject" data-key="form-subject">Assunto</label>
-                          <input type="text" id="subject" name="subject" required data-key-placeholder="form-subject-ph">
-                          <span class="error-message"></span>
-                      </div>
-                      <div class="form-group">
-                          <label for="message" data-key="form-message">Mensagem</label>
-                          <textarea id="message" name="message" required data-key-placeholder="form-message-ph"></textarea>
-                          <span class="error-message"></span>
-                      </div>
-                      <button type="submit" class="link-btn">
-                          <span data-key="form-submit">Enviar Mensagem</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                              <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
-                          </svg>
-                      </button>
-                      <p id="form-status" aria-live="polite"></p>
-                  </form>
-                  <aside class="contact-links-aside">
-                    <h3 data-key="contact-quick-links">Links Rápidos</h3>
-<div class="contact-grid">
-    
-    <a href="https://www.quantummasterinc.com" target="_blank" rel="noopener" class="contact-link">
-        <img src="logo_quantummasterinc.jpeg" alt="Logo Quantum Master Inc." style="width: 24px; height: 24px; object-fit: contain;">
-        <span>Quantum Master Inc.</span>
-    </a>
-
-    <a href="mailto:israelribeiroc7@gmail.com" class="contact-link">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24px" height="24px">
-            <path fill-rule="evenodd" d="M3 5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm15 1.007a1 1 0 00-1.637-.77L12 8.71 7.637 5.237a1 1 0 00-1.274 1.54L12 10.29l5.637-3.513a1 1 0 00.363-.77z" clip-rule="evenodd" />
-        </svg>
-        <span data-key="contact-email-text">Email</span>
-    </a>
-
-    <a href="https://www.linkedin.com/in/israel-ribeiro1/" target="_blank" rel="noopener" class="contact-link">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24px" height="24px">
-            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-        </svg>
-        <span>LinkedIn</span>
-    </a>
-
-    <a href="https://github.com/israel-c-ribeiro" target="_blank" rel="noopener" class="contact-link">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24px" height="24px">
-            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-        </svg>
-        <span>GitHub</span>
-    </a>
-</div>
-          </section>
-    </main>
-
-    <footer class="reveal">
-        <div class="footer-content">
-             <div class="footer-grid">
-                <div class="footer-column">
-                    <h4 data-key="footer-title">Dr. Israel C. Ribeiro</h4>
-                    <p data-key="footer-bio">Químico Computacional de Materiais & CEO da Quantum Master Inc.</p>
-                    <ul>
-                    <li>
-                        <a href="mailto:israelribeiroc7@gmail.com" title="Copiar e-mail">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M3 5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm15 1.007a1 1 0 00-1.637-.77L12 8.71 7.637 5.237a1 1 0 00-1.274 1.54L12 10.29l5.637-3.513a1 1 0 00.363-.77z" clip-rule="evenodd" /></svg>
-                            israelribeiroc7@gmail.com
-                        </a>
-                    </li>
-                    <li data-key="footer-location"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Mons, Belgium</li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h4 data-key="footer-academic-profiles">Perfis Acadêmicos</h4>
-                    <ul>
-                        <li><a href="http://lattes.cnpq.br/3550877645196037" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M97.872 434.733c-46.338-94.949-73.906-152.29-73.906-153.713c0-2.322 2.831-2 30.672 3.46c48.965 9.614 75.126 12.326 118.735 12.342c57.697.016 104.68-9.122 141.185-27.484c19.311-9.715 30.925-18.327 40.437-29.993c11.716-14.378 15.48-24.28 15.615-40.947c.118-15.852-2.018-24.211-11.19-43.608c-3.63-7.665-6.817-16.463-7.122-19.55c-.475-4.968-.068-5.68 3.595-6.104c8.003-.948 47.507 37.403 62.055 60.241c25.076 39.386 27.111 81.993 5.884 123.195c-13.04 25.314-27.45 42.828-51.577 62.734c-40.099 33.062-86.708 56.086-151.069 74.635c-34.57 9.97-90.471 22.059-101.984 22.059c-2.44 0-7.02-8.003-21.296-37.283l-.034.015zm12.904-153.121c-45.016-5.832-82.79-10.903-83.96-11.275c-2-.644-9.155-24.516-13.191-43.947c-1.017-4.917-2.51-17.939-3.323-28.958c-3.63-49.17 7.069-83.166 35.74-113.735C94.583 31.985 198.516 25.694 315.777 67.37c20.582 7.325 28.755 12.411 24.975 15.581c-2.797 2.34-21.753 2.306-54.51-.102c-51.204-3.764-90.183 3.357-110.274 20.176c-30.588 25.602-25.924 81.724 13.53 162.682c4.273 8.766 8.58 17.345 9.563 19.09c2.29 4.019.628 7.75-3.357 7.563c-1.697-.081-39.915-4.912-84.929-10.746zm151.016-44.047c-35.928-6.46-68.227-28.74-78.654-54.222c-5.002-12.241-4.765-28.213.576-37.774c4.832-8.648 17.31-18.65 28.484-22.839c18.6-6.968 51.17-4.188 74.907 6.41c22.533 10.055 42.507 27.738 49.932 44.184c9.53 21.109 1.593 44.66-18.82 55.901c-13.531 7.443-39.827 11.326-56.443 8.341z"/></svg>Lattes</a></li>
-                        <li><a href="https://scholar.google.com.br/citations?hl=pt-BR&user=GQugll8AAAAJ" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>Google Scholar</a></li>
-                        <li><a href="https://orcid.org/0000-0002-5272-8752" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"><path d="M336.62 194.538c-7.13-3.328-13.866-5.56-20.253-6.614c-6.365-1.095-16.574-1.612-30.71-1.612h-36.704v152.747h37.634c14.673 0 26.081-1.013 34.224-3.017c8.142-2.004 14.921-4.526 20.356-7.626a69.448 69.448 0 0 0 14.942-11.388c14.488-14.714 21.742-33.273 21.742-55.717c0-22.052-7.44-40.052-22.341-53.982c-5.498-5.166-11.822-9.444-18.89-12.793zM256 8C119.022 8 8 119.042 8 256s111.022 248 248 248s248-111.042 248-248S392.978 8 256 8m-82.336 357.513h-29.389V160.148h29.389zM158.95 138.696c-11.14 0-20.213-9.01-20.213-20.212c0-11.118 9.052-20.191 20.213-20.191c11.18 0 20.232 9.052 20.232 20.191a20.194 20.194 0 0 1-20.232 20.212m241.386 163.597c-5.29 12.545-12.834 23.581-22.65 33.088c-9.982 9.837-21.597 17.194-34.844 22.196c-7.75 3.017-14.839 5.063-21.307 6.117c-6.49 1.013-18.828 1.509-37.076 1.509h-64.956V160.148h69.233c27.962 0 50.034 4.154 66.32 12.545c16.265 8.37 29.181 20.728 38.792 36.972c9.61 16.265 14.425 34.018 14.425 53.196c.023 13.765-2.666 26.908-7.936 39.432z"/></svg>ORCID</a></li>
-                    </ul>
-                 </div>
-                 <div class="footer-column">
-                    <h4 data-key="footer-professional-profiles">Redes e Perfis</h4>
-                     <ul>
-                        <li><a href="https://github.com/israel-c-ribeiro" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>GitHub</a></li>
-                        <li><a href="https://www.linkedin.com/in/israel-ribeiro1/" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>LinkedIn</a></li>
-                       <li><a href="https://www.quantummasterinc.com" target="_blank" rel="noopener"><img src="logo_quantummasterinc.jpeg" alt="Logo Quantum Master Inc" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;"> Quantum Master Inc.</a></li>
-                    </ul>
-                 </div>
-                <div class="footer-column">
-                    <h4 data-key="footer-sitemap">Mapa do Site</h4>
-                    <ul>
-                        <li><a href="index.html#sobre" data-key="nav-about">Sobre</a></li>
-                        <li><a href="index.html#experiencia" data-key="nav-experience">Atuação</a></li>
-                        <li><a href="index.html#servicos" data-key="nav-services">Serviços</a></li>
-                        <li><a href="index.html#formacao" data-key="nav-education">Formação</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>&nbsp;</h4> <ul>
-                        <li><a href="index.html#projetos" data-key="nav-projects">Projetos</a></li>
-                        <li><a href="index.html#publicacoes" data-key="nav-publications">Publicações</a></li>
-                        <li><a href="index.html#habilidades" data-key="nav-skills">Habilidades</a></li>
-                        <li><a href="index.html#contato" data-key="nav-contact">Contato</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                 <div class="footer-license">
-                    <p><a href="politica-de-privacidade.html" data-key="privacy-policy">Política de Privacidade</a> | <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener" data-key="footer-license-text-short">Licença CC BY-SA 4.0</a></p>
-                </div>
-                <p>&copy; <span id="copyright-year"></span> Dr. Israel C. Ribeiro</p>
-                <div class="footer-update">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-history" viewBox="0 0 16 16">
-                        <path d="M8.515 1.019A7 7 0 1 0 8 15a7 7 0 0 0 .515-13.981zM8 14a6 6 0 1 1 0-12 6 6 0 0 1 0 12z"/>
-                        <path d="M8.5 5.5a.5.5 0 0 0-1 0v2.5h-2a.5.5 0 0 0 0 1h2.5V5.5z"/>
-                    </svg>
-                    <span id="last-updated-date"></span>
-                </div>
-            </div>
+  <main id="top">
+    <!-- ============================ HERO ============================ -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Computational materials chemist · Ph.D.</p>
+          <h1 data-i18n="hero.title_html">Designing materials from <em>first principles</em>.</h1>
+          <p class="lead" data-i18n="hero.lead">I'm Israel Ribeiro, a postdoctoral researcher at the University of Mons. I combine density functional theory, machine-learning interatomic potentials and data science to understand and design halide perovskites and other energy materials, atom by atom.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="cv/Israel_C_Ribeiro_CV.pdf" download="Israel_C_Ribeiro_CV.pdf">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+              <span data-i18n="hero.cv">Download CV</span>
+            </a>
+            <a class="btn" href="#contact" data-i18n="hero.contact">Get in touch</a>
+          </div>
+          <div class="hero-meta">
+            <span data-i18n="hero.meta1">Postdoc · Université de Mons</span>
+            <span data-i18n="hero.meta2">Ph.D. · University of São Paulo</span>
+            <span data-i18n="hero.meta3">Mons, Belgium</span>
+          </div>
         </div>
-    </footer>
-    
-    <div id="toast-notification"></div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
-    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" defer></script>
-    
-    <script src="utils.js" defer></script> 
+        <div class="lattice-wrap" aria-hidden="true">
+          <canvas id="lattice"></canvas>
+          <div class="lattice-caption">
+            <span data-i18n="hero.caption">ABX₃ perovskite · 2×2×2 supercell · corner-sharing BX₆ octahedra</span>
+            <span class="lattice-legend">
+              <span><i class="a"></i><span data-i18n="hero.legendA">A site</span></span>
+              <span><i class="b"></i><span data-i18n="hero.legendB">B site</span></span>
+              <span><i class="x"></i><span data-i18n="hero.legendX">X site</span></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ ABOUT ============================ -->
+    <section class="section" id="about">
+      <div class="wrap about-grid">
+        <img class="portrait reveal" src="https://github.com/israel-c-ribeiro.png?size=440" alt="Portrait of Israel C. Ribeiro" width="220" height="220" loading="lazy" decoding="async">
+        <div>
+          <div class="section-head reveal">
+            <p class="eyebrow" data-i18n="about.eyebrow">About</p>
+            <h2 data-i18n="about.title">Simulation, machine learning and a chemist's intuition.</h2>
+          </div>
+          <div class="about-text reveal">
+            <p data-i18n="about.p1_html">I am a computational chemist working on the atomic-scale physics and chemistry of functional materials. My Ph.D. at the <strong>University of São Paulo</strong> focused on the surface passivation of two-dimensional hybrid perovskite thin films, using DFT to resolve how metallic and organic cations change their structure, stability and optoelectronic response.</p>
+            <p data-i18n="about.p2_html">Today, at <strong>UMONS</strong>, I build automation and GUI tooling around machine-learning interatomic potentials, run structural searches on hybrid organic–inorganic interfaces and coordinate deliverables across a multi-partner EU consortium of theorists and experimentalists.</p>
+            <p data-i18n="about.p3_html">Before that I spent three years in industrial analytical labs, and I hold an MBA in Data Science &amp; Analytics. On the side, I founded Quantum Master Inc., a small scientific-consulting venture. What I am looking for now: a research or R&amp;D role where simulation, machine learning and materials chemistry meet.</p>
+          </div>
+          <div class="about-facts reveal">
+            <div class="fact"><b data-i18n="about.f1">Based in</b><span data-i18n="about.f1v">Mons, Belgium</span></div>
+            <div class="fact"><b data-i18n="about.f2">Currently</b><span data-i18n="about.f2v">Postdoc, UMONS</span></div>
+            <div class="fact"><b data-i18n="about.f3">Languages</b><span data-i18n="about.f3v">PT · EN · FR</span></div>
+            <div class="fact"><b data-i18n="about.f4">Open to</b><span data-i18n="about.f4v">Research &amp; R&amp;D roles</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ RESEARCH ============================ -->
+    <section class="section" id="research">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="research.eyebrow">Research</p>
+          <h2 data-i18n="research.title">What I work on</h2>
+          <p class="lede" data-i18n="research.lede">Four threads that run through my Ph.D., my postdoc and the tools I write.</p>
+        </div>
+        <div class="research-grid">
+          <article class="rcard reveal">
+            <div class="rcard-icon"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 34 20 20 34 6 20Z"/><path d="M20 6v28M6 20h28"/><circle cx="20" cy="20" r="3" fill="currentColor" stroke="none"/><circle cx="20" cy="6" r="2" fill="currentColor" stroke="none"/><circle cx="34" cy="20" r="2" fill="currentColor" stroke="none"/><circle cx="20" cy="34" r="2" fill="currentColor" stroke="none"/><circle cx="6" cy="20" r="2" fill="currentColor" stroke="none"/></svg></div>
+            <h3 data-i18n="research.c1.title">First-principles simulation</h3>
+            <p data-i18n="research.c1.text">Density functional theory of surfaces, interfaces, defects and thin films: structure, energetics, electronic and optical properties, from bulk halide perovskites to 2D Ruddlesden–Popper phases.</p>
+            <div class="tags"><span class="tag">DFT</span><span class="tag">VASP</span><span class="tag">Quantum ESPRESSO</span><span class="tag">FHI-aims</span><span class="tag">surfaces &amp; interfaces</span><span class="tag">2D perovskites</span></div>
+          </article>
+          <article class="rcard reveal">
+            <div class="rcard-icon"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="7" cy="12" r="2.5"/><circle cx="7" cy="28" r="2.5"/><circle cx="20" cy="8" r="2.5"/><circle cx="20" cy="20" r="2.5"/><circle cx="20" cy="32" r="2.5"/><circle cx="33" cy="20" r="2.5"/><path d="M9.5 12l8-3.5M9.5 12l8 7M9.5 28l8-7M9.5 28l8 3.5M22.5 8.5l8 10M22.5 20h8M22.5 31.5l8-10"/></svg></div>
+            <h3 data-i18n="research.c2.title">ML potentials &amp; structure search</h3>
+            <p data-i18n="research.c2.text">Neural-network interatomic potentials coupled with structural search algorithms to explore hybrid organic–inorganic interfaces, quantify band alignment and process MD trajectories at scale on HPC clusters.</p>
+            <div class="tags"><span class="tag">MACE</span><span class="tag">NNIP</span><span class="tag">structure search</span><span class="tag">MD</span><span class="tag">tight-binding</span><span class="tag">Slurm</span></div>
+          </article>
+          <article class="rcard reveal">
+            <div class="rcard-icon"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M6 34V6M6 34h28"/><circle cx="13" cy="26" r="1.8" fill="currentColor" stroke="none"/><circle cx="16" cy="29" r="1.8" fill="currentColor" stroke="none"/><circle cx="11" cy="29" r="1.8" fill="currentColor" stroke="none"/><circle cx="26" cy="13" r="1.8" fill="currentColor" stroke="none"/><circle cx="29" cy="16" r="1.8" fill="currentColor" stroke="none"/><circle cx="24" cy="17" r="1.8" fill="currentColor" stroke="none"/><circle cx="29" cy="11" r="1.8" fill="currentColor" stroke="none"/><circle cx="13.5" cy="27.5" r="6" stroke-dasharray="2 2"/><circle cx="27" cy="14" r="6.5" stroke-dasharray="2 2"/></svg></div>
+            <h3 data-i18n="research.c3.title">Materials informatics</h3>
+            <p data-i18n="research.c3.text">Clustering, dimensionality reduction and descriptor engineering to screen candidate cations and passivating molecules, shrinking the experimental search space before anything is synthesised.</p>
+            <div class="tags"><span class="tag">scikit-learn</span><span class="tag">k-means</span><span class="tag">hierarchical clustering</span><span class="tag">PCA</span><span class="tag">descriptors</span></div>
+          </article>
+          <article class="rcard reveal">
+            <div class="rcard-icon"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 5h8M18 5v10L8.5 31a3 3 0 0 0 2.6 4.5h17.8a3 3 0 0 0 2.6-4.5L22 15V5"/><path d="M12 25h16"/><circle cx="17" cy="29.5" r="1.4" fill="currentColor" stroke="none"/><circle cx="23" cy="31" r="1.2" fill="currentColor" stroke="none"/></svg></div>
+            <h3 data-i18n="research.c4.title">Theory ↔ experiment</h3>
+            <p data-i18n="research.c4.text">A hands-on background in sol-gel synthesis and characterisation (XRD, FTIR, UV-Vis, SEM/TEM) that helps turn simulation output into synthesis targets experimental partners can act on.</p>
+            <div class="tags"><span class="tag">sol-gel</span><span class="tag">XRD</span><span class="tag">FTIR</span><span class="tag">UV-Vis</span><span class="tag">SEM/TEM</span><span class="tag">ICP</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ EXPERIENCE ============================ -->
+    <section class="section" id="experience">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="exp.eyebrow">Experience</p>
+          <h2 data-i18n="exp.title">Where I have worked</h2>
+        </div>
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-when" data-i18n="exp.1.when">Jan 2026 – present</div>
+            <div class="tl-rail"></div>
+            <div class="tl-body">
+              <h3><span data-i18n="exp.1.role">Postdoctoral Researcher — Computational Materials Science</span><span class="tl-kind" data-i18n="exp.kind.research">Research</span></h3>
+              <p class="org"><span data-i18n="exp.1.org">Université de Mons (UMONS)</span> · <span data-i18n="exp.1.loc">Mons, Belgium</span></p>
+              <ul>
+                <li data-i18n="exp.1.b1">Built Python GUIs and automation pipelines for machine-learning interatomic potential (MLIP) workflows, cutting manual setup time across a multi-partner EU consortium.</li>
+                <li data-i18n="exp.1.b2">Deployed neural-network potentials coupled with structural search algorithms to model hybrid organic–inorganic interfaces and quantify band-alignment mechanisms.</li>
+                <li data-i18n="exp.1.b3">Engineered Slurm-based HPC data pipelines to process MD trajectories and compute electronic properties via tight-binding frameworks at scale.</li>
+                <li data-i18n="exp.1.b4">Coordinated deliverables across theoretical and experimental partners, translating simulation output into actionable insights for synthesis teams.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-when" data-i18n="exp.2.when">Nov 2020 – Sep 2025</div>
+            <div class="tl-rail"></div>
+            <div class="tl-body">
+              <h3><span data-i18n="exp.2.role">Doctoral Researcher — Computational Materials Science</span><span class="tl-kind" data-i18n="exp.kind.research">Research</span></h3>
+              <p class="org"><span data-i18n="exp.2.org">University of São Paulo (USP)</span> · <span data-i18n="exp.2.loc">São Carlos, Brazil</span></p>
+              <ul>
+                <li data-i18n="exp.2.b1">Designed and executed DFT studies on 2D perovskite thin-film passivation, resolving structural, energetic and optoelectronic properties at the atomic scale.</li>
+                <li data-i18n="exp.2.b2">Applied k-means and hierarchical clustering (scikit-learn) to screen organic cation candidates, prioritising top materials for synthesis.</li>
+                <li data-i18n="exp.2.b3">Automated end-to-end simulation workflows in Python/Bash, improving reproducibility and reducing compute turnaround on HPC clusters.</li>
+                <li data-i18n="exp.2.b4">Published in ACS Omega, ACS Applied Energy Materials, J. Phys. Chem. C and Applied Surface Science; communicated results to theorists and experimentalists alike.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tl-item industry reveal">
+            <div class="tl-when" data-i18n="exp.3.when">2019 – 2020</div>
+            <div class="tl-rail"></div>
+            <div class="tl-body">
+              <h3><span data-i18n="exp.3.role">Chemical Technician</span><span class="tl-kind" data-i18n="exp.kind.industry">Industry</span></h3>
+              <p class="org"><span data-i18n="exp.3.org">Resind Ltda.</span> · <span data-i18n="exp.3.loc">São João del-Rei, Brazil</span></p>
+              <ul>
+                <li data-i18n="exp.3.b1">Managed quality assurance for primary chemical products using X-ray quantitative analysis, maintaining traceability and regulatory compliance across production batches.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-when" data-i18n="exp.4.when">2017 – 2020</div>
+            <div class="tl-rail"></div>
+            <div class="tl-body">
+              <h3><span data-i18n="exp.4.role">Undergraduate Researcher — Materials Chemistry</span><span class="tl-kind" data-i18n="exp.kind.research">Research</span></h3>
+              <p class="org"><span data-i18n="exp.4.org">Federal University of São João del-Rei (UFSJ)</span> · <span data-i18n="exp.4.loc">São João del-Rei, Brazil</span></p>
+              <ul>
+                <li data-i18n="exp.4.b1">Synthesised rare-earth-doped inorganic nanomaterials via sol-gel and characterised them by XRD, FTIR, UV-Vis, TGA, BET and SEM/TEM.</li>
+                <li data-i18n="exp.4.b2">Performed first-principles electronic-structure calculations, building an integrated theory–experiment workflow.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tl-item industry reveal">
+            <div class="tl-when" data-i18n="exp.5.when">2015 – 2018</div>
+            <div class="tl-rail"></div>
+            <div class="tl-body">
+              <h3><span data-i18n="exp.5.role">Chemical Process Intern</span><span class="tl-kind" data-i18n="exp.kind.industry">Industry</span></h3>
+              <p class="org"><span data-i18n="exp.5.org">AMG Brazil</span> · <span data-i18n="exp.5.loc">São João del-Rei, Brazil</span></p>
+              <ul>
+                <li data-i18n="exp.5.b1">Executed fluoride/chloride and ICP elemental analyses, feeding data into statistical quality-control dashboards.</li>
+                <li data-i18n="exp.5.b2">Led process-optimisation trials and authored technical reports adopted by production management; spearheaded a 5S programme that improved laboratory efficiency.</li>
+                <li data-i18n="exp.5.b3">Ensured product conformance with industry regulations through systematic performance testing and root-cause documentation.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ EDUCATION ============================ -->
+    <section class="section" id="education">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="edu.eyebrow">Education</p>
+          <h2 data-i18n="edu.title">Academic background</h2>
+        </div>
+        <div class="edu-grid">
+          <article class="edu reveal">
+            <div class="when" data-i18n="edu.1.when">2020 – 2025</div>
+            <h3 data-i18n="edu.1.degree">Ph.D. in Physical Chemistry — Computational Materials Science</h3>
+            <p class="school" data-i18n="edu.1.school">University of São Paulo (USP), São Carlos</p>
+            <p class="note" data-i18n="edu.1.note">Advisor: Prof. Juarez L. F. Da Silva. Thesis on the atomic-scale physicochemical properties of metallic and organic cation passivation in 2D perovskite thin films.</p>
+          </article>
+          <article class="edu reveal">
+            <div class="when" data-i18n="edu.2.when">2024 – 2026</div>
+            <h3 data-i18n="edu.2.degree">MBA in Data Science &amp; Analytics</h3>
+            <p class="school" data-i18n="edu.2.school">University of São Paulo (USP)</p>
+            <p class="note" data-i18n="edu.2.note">Advisor: Prof. Gabrielle Lombardi. Final project: unsupervised learning for perovskite solar cells, uncovering hidden patterns in photovoltaic data.</p>
+          </article>
+          <article class="edu reveal">
+            <div class="when" data-i18n="edu.3.when">2015 – 2020</div>
+            <h3 data-i18n="edu.3.degree">B.Sc. in Chemistry, minor in Materials Chemistry</h3>
+            <p class="school" data-i18n="edu.3.school">Federal University of São João del-Rei (UFSJ)</p>
+            <p class="note" data-i18n="edu.3.note">Advisor: Prof. Horacio W. Alves. Thesis: theoretical investigation of GaN in the haeckelite 8-4 structure.</p>
+          </article>
+          <article class="edu reveal">
+            <div class="when" data-i18n="edu.4.when">2013 – 2015</div>
+            <h3 data-i18n="edu.4.degree">Technical degree in Chemistry</h3>
+            <p class="school" data-i18n="edu.4.school">CENEP, São João del-Rei</p>
+            <p class="note" data-i18n="edu.4.note">Vocational training in analytical and industrial chemistry.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ PUBLICATIONS ============================ -->
+    <section class="section" id="publications">
+      <div class="wrap pub-layout">
+        <div class="section-head reveal" style="margin-bottom:0">
+          <p class="eyebrow" data-i18n="pub.eyebrow">Publications</p>
+          <h2 data-i18n="pub.title">Papers and citations</h2>
+          <p class="lede" data-i18n="pub.lede">Peer-reviewed work on halide perovskites, surface passivation and luminescent oxides. Metrics refresh automatically every week from Google Scholar, with OpenAlex as a fallback.</p>
+        </div>
+
+        <div class="metrics reveal">
+          <div class="metric" id="m-citations"><b data-i18n="pub.m.citations">Citations</b><div class="v">72</div><div class="s"><strong>68</strong> since 2021</div></div>
+          <div class="metric" id="m-h"><b data-i18n="pub.m.h">h-index</b><div class="v">4</div><div class="s"><strong>4</strong> since 2021</div></div>
+          <div class="metric" id="m-i10"><b data-i18n="pub.m.i10">i10-index</b><div class="v">3</div><div class="s"><strong>3</strong> since 2021</div></div>
+        </div>
+
+        <div class="chart-card reveal">
+          <div class="chart-head">
+            <h3 data-i18n="pub.chart.title">Citations per year</h3>
+            <div class="chart-src" id="chart-src"></div>
+          </div>
+          <div class="chart" id="chart"></div>
+        </div>
+
+        <div class="reveal">
+          <div class="pub-list" id="pub-list"></div>
+          <div class="pub-actions">
+            <button class="btn btn-sm" id="pub-toggle" type="button" hidden>Show all</button>
+            <span class="spacer"></span>
+            <a class="btn btn-sm" href="https://scholar.google.com/citations?user=GQugll8AAAAJ" target="_blank" rel="noopener" data-i18n="pub.scholar">Google Scholar profile</a>
+            <a class="btn btn-sm" href="https://orcid.org/0000-0002-5272-8752" target="_blank" rel="noopener" data-i18n="pub.orcid">ORCID</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ CODE ============================ -->
+    <section class="section" id="code">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="code.eyebrow">Code</p>
+          <h2 data-i18n="code.title">Open-source tooling</h2>
+          <p class="lede" data-i18n="code.lede">Scripts and small applications from my day-to-day work, pulled live from GitHub.</p>
+        </div>
+        <div class="repo-grid reveal" id="repo-grid">
+          <div class="repo skeleton"></div><div class="repo skeleton"></div><div class="repo skeleton"></div>
+        </div>
+        <div class="pub-actions">
+          <a class="btn btn-sm" href="https://github.com/israel-c-ribeiro" target="_blank" rel="noopener" data-i18n="code.github">All repositories on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ SKILLS ============================ -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="skills.eyebrow">Skills</p>
+          <h2 data-i18n="skills.title">Tools I use</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3 data-i18n="skills.g1">Simulation codes &amp; methods</h3>
+            <div class="tags">
+              <span class="tag hi">VASP</span><span class="tag hi">Quantum ESPRESSO</span><span class="tag">FHI-aims</span><span class="tag">Gaussian</span><span class="tag hi">MACE</span><span class="tag">NNIP / MLIP</span><span class="tag">structure search</span><span class="tag">tight-binding</span><span class="tag">molecular dynamics</span><span class="tag">high-throughput screening</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3 data-i18n="skills.g2">Machine learning &amp; data</h3>
+            <div class="tags">
+              <span class="tag hi">Python</span><span class="tag hi">scikit-learn</span><span class="tag">pandas</span><span class="tag">NumPy</span><span class="tag">SciPy</span><span class="tag">clustering</span><span class="tag">PCA</span><span class="tag">regression / classification</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">Plotly</span><span class="tag">SQL</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3 data-i18n="skills.g3">HPC &amp; development</h3>
+            <div class="tags">
+              <span class="tag hi">Linux</span><span class="tag hi">Slurm</span><span class="tag">Bash</span><span class="tag">Git</span><span class="tag">Jupyter</span><span class="tag">LaTeX</span><span class="tag">Python GUIs</span><span class="tag">workflow automation</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3 data-i18n="skills.g4">Experimental</h3>
+            <div class="tags">
+              <span class="tag hi">sol-gel synthesis</span><span class="tag">XRD</span><span class="tag">FTIR</span><span class="tag">UV-Vis</span><span class="tag">TGA</span><span class="tag">BET</span><span class="tag">SEM / TEM</span><span class="tag">ICP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ TALKS & LANGUAGES ============================ -->
+    <section class="section" id="talks">
+      <div class="wrap two-col">
+        <div class="reveal">
+          <h3 data-i18n="talks.title">Selected talks</h3>
+          <div class="talks">
+            <div class="talk"><div class="y">2024</div><div><div class="t">Metal Halide Perovskites for Optoelectronics: from Fundamentals to Devices</div><div class="v">CNRS School, France</div></div></div>
+            <div class="talk"><div class="y">2024</div><div><div class="t">Impact of Organic Cation Passivation on Perovskite Thin Films</div><div class="v">1st CMD-CINE Workshop, IQSC-USP</div></div></div>
+            <div class="talk"><div class="y">2024</div><div><div class="t">The Chemistry Behind the Synthesis of MAPbI₃ Perovskites</div><div class="v">QTNano Journal Club, IQSC-USP</div></div></div>
+            <div class="talk"><div class="y">2024</div><div><div class="t">Role of Alkali Cation Passivation on Perovskite Thin Films</div><div class="v">Materials Chemistry Research Group, UFSJ</div></div></div>
+            <div class="talk"><div class="y">2024</div><div><div class="t">The Chemistry Beyond the Haber–Bosch Process</div><div class="v">PechaKucha Seminar, IFSC-USP</div></div></div>
+            <div class="talk"><div class="y">2023</div><div><div class="t">Surface Passivation in Perovskite Materials: Ab initio Investigations</div><div class="v">CINE Conference, UNICAMP</div></div></div>
+            <div class="talk"><div class="y">2017</div><div><div class="t">Energy Transfer from Tb³⁺ to Eu³⁺ in SiO₂–TiO₂</div><div class="v">18th International Conference on Luminescence, Brazil</div></div></div>
+          </div>
+        </div>
+        <div class="reveal">
+          <h3 data-i18n="langs.title">Languages</h3>
+          <div class="langs">
+            <div class="lang-row"><span data-i18n="langs.pt">Portuguese</span><div class="lang-bar"><i style="width:100%"></i></div><span class="lvl" data-i18n="langs.native">native</span></div>
+            <div class="lang-row"><span data-i18n="langs.en">English</span><div class="lang-bar"><i style="width:84%"></i></div><span class="lvl">C1</span></div>
+            <div class="lang-row"><span data-i18n="langs.fr">French</span><div class="lang-bar"><i style="width:50%"></i></div><span class="lvl">B1</span></div>
+            <div class="lang-row"><span data-i18n="langs.es">Spanish</span><div class="lang-bar"><i style="width:17%"></i></div><span class="lvl">A1</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ CONTACT ============================ -->
+    <section class="section" id="contact">
+      <div class="wrap contact-grid">
+        <div>
+          <div class="section-head reveal">
+            <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+            <h2 data-i18n="contact.title">Let's talk.</h2>
+            <p class="lede" data-i18n="contact.lede">Open to research positions, industrial R&amp;D roles and scientific collaborations in computational materials science. Write to me directly or use the form.</p>
+          </div>
+          <div class="contact-links reveal">
+            <a class="clink" href="mailto:israelribeiroc7@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span data-i18n="contact.email">Email</span><small>israelribeiroc7@gmail.com</small></a>
+            <a class="clink" href="https://www.linkedin.com/in/israel-ribeiro1/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg><span>LinkedIn</span><small>israel-ribeiro1</small></a>
+            <a class="clink" href="https://github.com/israel-c-ribeiro" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg><span>GitHub</span><small>israel-c-ribeiro</small></a>
+            <a class="clink" href="https://scholar.google.com/citations?user=GQugll8AAAAJ" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg><span>Google Scholar</span><small>GQugll8AAAAJ</small></a>
+            <a class="clink" href="https://orcid.org/0000-0002-5272-8752" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 9v7M8.5 6.5v.01M11.5 9h2.6a3.5 3.5 0 0 1 0 7h-2.6z"/></svg><span>ORCID</span><small>0000-0002-5272-8752</small></a>
+            <a class="clink" href="http://lattes.cnpq.br/3550877645196037" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16M6 20V9l6-5 6 5v11"/><path d="M10 20v-5h4v5"/></svg><span>Lattes CNPq</span><small>3550877645196037</small></a>
+          </div>
+        </div>
+
+        <form class="form reveal" id="contact-form" action="https://formspree.io/f/xanzkolw" method="POST">
+          <div class="field">
+            <label for="name" data-i18n="contact.form.name">Name</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="email" data-i18n="contact.form.email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="subject" data-i18n="contact.form.subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          <div class="field">
+            <label for="message" data-i18n="contact.form.message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <div>
+            <button class="btn btn-primary" type="submit">
+              <span data-i18n="contact.form.send">Send message</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg>
+            </button>
+          </div>
+          <p class="form-status" id="form-status" aria-live="polite"></p>
+          <p class="form-note" data-i18n="contact.form.note">Sent through Formspree. Your name and email are used only to reply to you.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span id="footer-year">© 2026 Israel C. Ribeiro</span>
+      <span>
+        <span data-i18n="footer.built">Built with plain HTML, CSS and JS</span>
+        <span class="sep"> · </span>
+        <a href="https://github.com/israel-c-ribeiro/israel-c-ribeiro.github.io" target="_blank" rel="noopener" data-i18n="footer.source">Source</a>
+        <span class="sep"> · </span>
+        <a href="https://www.quantummasterinc.com" target="_blank" rel="noopener" data-i18n="footer.qm">Founder, Quantum Master Inc.</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/lattice.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
