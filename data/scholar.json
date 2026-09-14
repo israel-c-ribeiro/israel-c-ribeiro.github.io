@@ -54,41 +54,7 @@
       ]
     },
     {
-      "title": "Impact of Thin Film Thickness on the Structural, Energetic and Optoelectronic Properties of Two-Dimensional FPEA2(MAn–1)PbnI3n+1 Perovskites",
-      "year": 2025,
-      "venue": "ACS Applied Energy Materials",
-      "doi": "10.1021/acsaem.4c02800",
-      "url": "https://doi.org/10.1021/acsaem.4c02800",
-      "citations": 9,
-      "authors": [
-        "Israel C. Ribeiro",
-        "Felipe D. Picoli",
-        "Pedro Ivo R. Moraes",
-        "André F. V. Fonseca",
-        "L. N. Oliveira",
-        "Ana F. Nogueira",
-        "Juarez L. F. Da Silva"
-      ]
-    },
-    {
-      "title": "Theoretical and experimental insights into transition metal single-atom adsorption effects on perovskite surfaces",
-      "year": 2025,
-      "venue": "The Journal of Physical Chemistry C",
-      "doi": "10.1021/acs.jpcc.5c04429",
-      "url": "https://doi.org/10.1021/acs.jpcc.5c04429",
-      "citations": 3,
-      "authors": [
-        "Israel C. Ribeiro",
-        "Andréia de Morais",
-        "Lucas G. Chagas",
-        "Jilian Nei de Freitas",
-        "Ramiro M. dos Santos",
-        "Matheus P. Lima",
-        "Juarez L. F. Da Silva"
-      ]
-    },
-    {
-      "title": "Metal Defects in MAPbI3 Perovskites: Uncovering the Roles of Ni, Cu, Ag, and Au",
+      "title": "Metal Defects in MAPbI 3 Perovskites: Uncovering the Roles of Ni, Cu, Ag, and Au",
       "year": 2025,
       "venue": "ACS Omega",
       "doi": "10.1021/acsomega.5c09558",
@@ -107,12 +73,46 @@
       ]
     },
     {
+      "title": "Theoretical and Experimental Insights into Transition Metal Single-Atom Adsorption Effects on Perovskite Surfaces",
+      "year": 2025,
+      "venue": "The Journal of Physical Chemistry C",
+      "doi": "10.1021/acs.jpcc.5c04429",
+      "url": "https://doi.org/10.1021/acs.jpcc.5c04429",
+      "citations": 3,
+      "authors": [
+        "Israel C. Ribeiro",
+        "Andréia de Morais",
+        "Lucas G. Chagas",
+        "Jilian Nei de Freitas",
+        "Ramiro M. dos Santos",
+        "Matheus P. Lima",
+        "Juarez L. F. Da Silva"
+      ]
+    },
+    {
+      "title": "Impact of Thin Film Thickness on the Structural, Energetic and Optoelectronic Properties of Two-Dimensional FPEA2(MAn–1)PbnI3n+1 Perovskites",
+      "year": 2025,
+      "venue": "ACS Applied Energy Materials",
+      "doi": "10.1021/acsaem.4c02800",
+      "url": "https://doi.org/10.1021/acsaem.4c02800",
+      "citations": 4,
+      "authors": [
+        "Israel C. Ribeiro",
+        "Felipe D. Picoli",
+        "Pedro Ivo R. Moraes",
+        "André F. V. Fonseca",
+        "L. N. Oliveira",
+        "Ana F. Nogueira",
+        "Juarez L. F. Da Silva"
+      ]
+    },
+    {
       "title": "Unveiling the impact of organic cation passivation on structural and optoelectronic properties of two-dimensional perovskites thin films",
       "year": 2024,
       "venue": "Applied Surface Science",
       "doi": "10.1016/j.apsusc.2024.161098",
       "url": "https://doi.org/10.1016/j.apsusc.2024.161098",
-      "citations": 12,
+      "citations": 9,
       "authors": [
         "Israel C. Ribeiro",
         "Pedro Ivo R. Moraes",
@@ -126,7 +126,7 @@
       "venue": "The Journal of Physical Chemistry C",
       "doi": "10.1021/acs.jpcc.3c01894",
       "url": "https://doi.org/10.1021/acs.jpcc.3c01894",
-      "citations": 13,
+      "citations": 8,
       "authors": [
         "Israel C. Ribeiro",
         "Pedro Ivo R. Moraes",
@@ -135,12 +135,12 @@
       ]
     },
     {
-      "title": "CaTiO3: Er3+: Yb3+ upconversion from 980 nm to 1550 nm excitation and its potential as cells luminescent probes",
-      "year": 2019,
+      "title": "CaTiO3:Er3+:Yb3+ upconversion from 980 nm to 1550 nm excitation and its potential as cells luminescent probes",
+      "year": 2018,
       "venue": "Materials Chemistry and Physics",
       "doi": "10.1016/j.matchemphys.2018.11.018",
       "url": "https://doi.org/10.1016/j.matchemphys.2018.11.018",
-      "citations": 35,
+      "citations": 28,
       "authors": [
         "Rafael V. Perrella",
         "Israel C. Ribeiro",
@@ -152,7 +152,7 @@
       ]
     }
   ],
-  "updated": "2026-09-11T17:34:32Z",
+  "updated": "2026-09-14T12:24:32Z",
   "recent_since": 2021,
   "scholar_id": "GQugll8AAAAJ",
   "orcid": "0000-0002-5272-8752",
