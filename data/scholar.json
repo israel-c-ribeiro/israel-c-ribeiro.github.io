@@ -2,12 +2,12 @@
   "source": "google-scholar",
   "profile_url": "https://scholar.google.com/citations?user=GQugll8AAAAJ",
   "metrics": {
-    "citations": 73,
-    "citations_recent": 69,
+    "citations": 74,
+    "citations_recent": 70,
     "h_index": 4,
     "h_index_recent": 4,
-    "i10_index": 3,
-    "i10_index_recent": 3
+    "i10_index": 4,
+    "i10_index_recent": 4
   },
   "cites_per_year": {
     "2019": 1,
@@ -17,7 +17,7 @@
     "2023": 4,
     "2024": 11,
     "2025": 21,
-    "2026": 18
+    "2026": 19
   },
   "publications": [
     {
@@ -59,7 +59,7 @@
       "venue": "ACS Applied Energy Materials",
       "doi": "10.1021/acsaem.4c02800",
       "url": "https://doi.org/10.1021/acsaem.4c02800",
-      "citations": 9,
+      "citations": 10,
       "authors": [
         "Israel C. Ribeiro",
         "Felipe D. Picoli",
@@ -152,10 +152,10 @@
       ]
     }
   ],
-  "updated": "2026-10-19T12:32:48Z",
+  "updated": "2026-10-26T12:29:39Z",
   "recent_since": 2021,
   "scholar_id": "GQugll8AAAAJ",
   "orcid": "0000-0002-5272-8752",
   "openalex_id": "A5051798399",
-  "metrics_updated": "2026-10-19T12:32:48Z"
+  "metrics_updated": "2026-10-26T12:29:39Z"
 }
