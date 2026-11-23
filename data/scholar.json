@@ -107,7 +107,7 @@
       "venue": "ACS Applied Energy Materials",
       "doi": "10.1021/acsaem.4c02800",
       "url": "https://doi.org/10.1021/acsaem.4c02800",
-      "citations": 8,
+      "citations": 9,
       "authors": [
         "Israel C. Ribeiro",
         "Felipe D. Picoli",
@@ -152,7 +152,7 @@
       "venue": "Materials Chemistry and Physics",
       "doi": "10.1016/j.matchemphys.2018.11.018",
       "url": "https://doi.org/10.1016/j.matchemphys.2018.11.018",
-      "citations": 29,
+      "citations": 32,
       "authors": [
         "Rafael V. Perrella",
         "Israel C. Ribeiro",
@@ -164,7 +164,7 @@
       ]
     }
   ],
-  "updated": "2026-11-16T15:24:37Z",
+  "updated": "2026-11-23T17:52:23Z",
   "recent_since": 2021,
   "scholar_id": "GQugll8AAAAJ",
   "orcid": "0000-0002-5272-8752",
